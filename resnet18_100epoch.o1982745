@@ -1,0 +1,704 @@
+Training and testing datasets ready
+Network ready to train
+Training begins
+TRAINING:
+[1,     1] loss: 0.098 acc: 0.00 time: 1.27
+TRAINING:
+[1,    61] loss: 5.252 acc: 6.59 time: 15.48
+TESTING:
+Accuracy of the network on the 10000 test images: 6.80 %
+Average loss on the 10000 test images: 5.584
+TRAINING:
+[2,     1] loss: 0.078 acc: 11.72 time: 1.00
+TRAINING:
+[2,    61] loss: 4.529 acc: 12.12 time: 14.19
+TESTING:
+Accuracy of the network on the 10000 test images: 8.44 %
+Average loss on the 10000 test images: 5.350
+TRAINING:
+[3,     1] loss: 0.072 acc: 16.41 time: 1.07
+TRAINING:
+[3,    61] loss: 4.168 acc: 15.89 time: 14.63
+TESTING:
+Accuracy of the network on the 10000 test images: 15.48 %
+Average loss on the 10000 test images: 4.355
+TRAINING:
+[4,     1] loss: 0.062 acc: 19.53 time: 1.28
+TRAINING:
+[4,    61] loss: 3.819 acc: 19.95 time: 13.87
+TESTING:
+Accuracy of the network on the 10000 test images: 17.41 %
+Average loss on the 10000 test images: 4.090
+TRAINING:
+[5,     1] loss: 0.054 acc: 25.00 time: 1.37
+TRAINING:
+[5,    61] loss: 3.589 acc: 22.81 time: 13.83
+TESTING:
+Accuracy of the network on the 10000 test images: 20.50 %
+Average loss on the 10000 test images: 4.034
+TRAINING:
+[6,     1] loss: 0.054 acc: 29.69 time: 1.00
+TRAINING:
+[6,    61] loss: 3.364 acc: 26.29 time: 15.61
+TESTING:
+Accuracy of the network on the 10000 test images: 25.08 %
+Average loss on the 10000 test images: 3.837
+TRAINING:
+[7,     1] loss: 0.047 acc: 35.16 time: 1.43
+TRAINING:
+[7,    61] loss: 3.179 acc: 28.92 time: 13.45
+TESTING:
+Accuracy of the network on the 10000 test images: 25.08 %
+Average loss on the 10000 test images: 3.844
+TRAINING:
+[8,     1] loss: 0.044 acc: 40.62 time: 1.47
+TRAINING:
+[8,    61] loss: 2.981 acc: 32.55 time: 14.66
+TESTING:
+Accuracy of the network on the 10000 test images: 27.40 %
+Average loss on the 10000 test images: 3.634
+TRAINING:
+[9,     1] loss: 0.044 acc: 39.06 time: 1.11
+TRAINING:
+[9,    61] loss: 2.775 acc: 35.55 time: 14.22
+TESTING:
+Accuracy of the network on the 10000 test images: 24.55 %
+Average loss on the 10000 test images: 3.843
+TRAINING:
+[10,     1] loss: 0.040 acc: 43.75 time: 1.08
+TRAINING:
+[10,    61] loss: 2.621 acc: 38.24 time: 13.99
+TESTING:
+Accuracy of the network on the 10000 test images: 29.52 %
+Average loss on the 10000 test images: 3.700
+TRAINING:
+[11,     1] loss: 0.040 acc: 42.19 time: 1.40
+TRAINING:
+[11,    61] loss: 2.423 acc: 42.46 time: 13.61
+TESTING:
+Accuracy of the network on the 10000 test images: 34.15 %
+Average loss on the 10000 test images: 3.377
+TRAINING:
+[12,     1] loss: 0.036 acc: 51.56 time: 1.04
+TRAINING:
+[12,    61] loss: 2.225 acc: 45.94 time: 13.89
+TESTING:
+Accuracy of the network on the 10000 test images: 34.88 %
+Average loss on the 10000 test images: 3.343
+TRAINING:
+[13,     1] loss: 0.034 acc: 50.00 time: 1.30
+TRAINING:
+[13,    61] loss: 2.077 acc: 49.09 time: 14.10
+TESTING:
+Accuracy of the network on the 10000 test images: 33.14 %
+Average loss on the 10000 test images: 3.398
+TRAINING:
+[14,     1] loss: 0.030 acc: 53.91 time: 1.05
+TRAINING:
+[14,    61] loss: 1.951 acc: 51.38 time: 14.19
+TESTING:
+Accuracy of the network on the 10000 test images: 38.35 %
+Average loss on the 10000 test images: 3.309
+TRAINING:
+[15,     1] loss: 0.024 acc: 64.84 time: 1.18
+TRAINING:
+[15,    61] loss: 1.771 acc: 55.26 time: 14.78
+TESTING:
+Accuracy of the network on the 10000 test images: 34.64 %
+Average loss on the 10000 test images: 3.497
+TRAINING:
+[16,     1] loss: 0.025 acc: 67.19 time: 1.13
+TRAINING:
+[16,    61] loss: 1.607 acc: 58.85 time: 14.51
+TESTING:
+Accuracy of the network on the 10000 test images: 41.29 %
+Average loss on the 10000 test images: 3.129
+TRAINING:
+[17,     1] loss: 0.024 acc: 64.84 time: 1.01
+TRAINING:
+[17,    61] loss: 1.458 acc: 62.27 time: 14.44
+TESTING:
+Accuracy of the network on the 10000 test images: 44.09 %
+Average loss on the 10000 test images: 2.990
+TRAINING:
+[18,     1] loss: 0.017 acc: 75.00 time: 1.04
+TRAINING:
+[18,    61] loss: 1.265 acc: 67.40 time: 14.18
+TESTING:
+Accuracy of the network on the 10000 test images: 42.98 %
+Average loss on the 10000 test images: 3.147
+TRAINING:
+[19,     1] loss: 0.013 acc: 82.81 time: 1.03
+TRAINING:
+[19,    61] loss: 1.122 acc: 70.27 time: 14.72
+TESTING:
+Accuracy of the network on the 10000 test images: 45.34 %
+Average loss on the 10000 test images: 3.049
+TRAINING:
+[20,     1] loss: 0.014 acc: 77.34 time: 1.21
+TRAINING:
+[20,    61] loss: 1.014 acc: 72.83 time: 14.18
+TESTING:
+Accuracy of the network on the 10000 test images: 46.16 %
+Average loss on the 10000 test images: 3.054
+TRAINING:
+[21,     1] loss: 0.011 acc: 83.59 time: 1.03
+TRAINING:
+[21,    61] loss: 0.860 acc: 77.06 time: 14.69
+TESTING:
+Accuracy of the network on the 10000 test images: 48.63 %
+Average loss on the 10000 test images: 3.023
+TRAINING:
+[22,     1] loss: 0.013 acc: 81.25 time: 0.87
+TRAINING:
+[22,    61] loss: 0.727 acc: 80.87 time: 15.06
+TESTING:
+Accuracy of the network on the 10000 test images: 50.31 %
+Average loss on the 10000 test images: 2.973
+TRAINING:
+[23,     1] loss: 0.007 acc: 89.84 time: 1.14
+TRAINING:
+[23,    61] loss: 0.592 acc: 84.80 time: 14.07
+TESTING:
+Accuracy of the network on the 10000 test images: 50.27 %
+Average loss on the 10000 test images: 2.967
+TRAINING:
+[24,     1] loss: 0.008 acc: 89.06 time: 1.03
+TRAINING:
+[24,    61] loss: 0.536 acc: 86.22 time: 14.65
+TESTING:
+Accuracy of the network on the 10000 test images: 51.66 %
+Average loss on the 10000 test images: 2.937
+TRAINING:
+[25,     1] loss: 0.007 acc: 89.06 time: 1.39
+TRAINING:
+[25,    61] loss: 0.446 acc: 88.80 time: 14.04
+TESTING:
+Accuracy of the network on the 10000 test images: 50.94 %
+Average loss on the 10000 test images: 3.080
+TRAINING:
+[26,     1] loss: 0.005 acc: 93.75 time: 1.03
+TRAINING:
+[26,    61] loss: 0.367 acc: 91.12 time: 14.06
+TESTING:
+Accuracy of the network on the 10000 test images: 51.18 %
+Average loss on the 10000 test images: 3.159
+TRAINING:
+[27,     1] loss: 0.006 acc: 89.84 time: 1.27
+TRAINING:
+[27,    61] loss: 0.285 acc: 93.67 time: 14.71
+TESTING:
+Accuracy of the network on the 10000 test images: 52.00 %
+Average loss on the 10000 test images: 3.043
+TRAINING:
+[28,     1] loss: 0.003 acc: 96.09 time: 1.01
+TRAINING:
+[28,    61] loss: 0.243 acc: 94.84 time: 14.39
+TESTING:
+Accuracy of the network on the 10000 test images: 52.82 %
+Average loss on the 10000 test images: 3.029
+TRAINING:
+[29,     1] loss: 0.003 acc: 96.88 time: 1.20
+TRAINING:
+[29,    61] loss: 0.195 acc: 95.82 time: 14.62
+TESTING:
+Accuracy of the network on the 10000 test images: 53.79 %
+Average loss on the 10000 test images: 3.029
+TRAINING:
+[30,     1] loss: 0.003 acc: 97.66 time: 1.34
+TRAINING:
+[30,    61] loss: 0.194 acc: 95.48 time: 13.75
+TESTING:
+Accuracy of the network on the 10000 test images: 53.59 %
+Average loss on the 10000 test images: 3.046
+TRAINING:
+[31,     1] loss: 0.002 acc: 98.44 time: 1.28
+TRAINING:
+[31,    61] loss: 0.165 acc: 96.77 time: 13.44
+TESTING:
+Accuracy of the network on the 10000 test images: 55.09 %
+Average loss on the 10000 test images: 3.105
+TRAINING:
+[32,     1] loss: 0.001 acc: 98.44 time: 1.03
+TRAINING:
+[32,    61] loss: 0.147 acc: 96.97 time: 14.74
+TESTING:
+Accuracy of the network on the 10000 test images: 55.67 %
+Average loss on the 10000 test images: 3.008
+TRAINING:
+[33,     1] loss: 0.002 acc: 96.09 time: 1.17
+TRAINING:
+[33,    61] loss: 0.119 acc: 97.62 time: 14.00
+TESTING:
+Accuracy of the network on the 10000 test images: 54.12 %
+Average loss on the 10000 test images: 3.167
+TRAINING:
+[34,     1] loss: 0.001 acc: 98.44 time: 1.03
+TRAINING:
+[34,    61] loss: 0.125 acc: 97.30 time: 14.16
+TESTING:
+Accuracy of the network on the 10000 test images: 55.48 %
+Average loss on the 10000 test images: 3.088
+TRAINING:
+[35,     1] loss: 0.001 acc: 100.00 time: 0.98
+TRAINING:
+[35,    61] loss: 0.112 acc: 97.50 time: 14.03
+TESTING:
+Accuracy of the network on the 10000 test images: 54.61 %
+Average loss on the 10000 test images: 3.198
+TRAINING:
+[36,     1] loss: 0.001 acc: 100.00 time: 1.08
+TRAINING:
+[36,    61] loss: 0.104 acc: 97.62 time: 14.34
+TESTING:
+Accuracy of the network on the 10000 test images: 54.46 %
+Average loss on the 10000 test images: 3.161
+TRAINING:
+[37,     1] loss: 0.002 acc: 97.66 time: 0.86
+TRAINING:
+[37,    61] loss: 0.088 acc: 97.89 time: 15.16
+TESTING:
+Accuracy of the network on the 10000 test images: 55.48 %
+Average loss on the 10000 test images: 3.180
+TRAINING:
+[38,     1] loss: 0.001 acc: 100.00 time: 1.01
+TRAINING:
+[38,    61] loss: 0.098 acc: 97.85 time: 14.60
+TESTING:
+Accuracy of the network on the 10000 test images: 55.48 %
+Average loss on the 10000 test images: 3.095
+TRAINING:
+[39,     1] loss: 0.002 acc: 98.44 time: 1.15
+TRAINING:
+[39,    61] loss: 0.076 acc: 98.12 time: 13.97
+TESTING:
+Accuracy of the network on the 10000 test images: 55.52 %
+Average loss on the 10000 test images: 3.092
+TRAINING:
+[40,     1] loss: 0.000 acc: 100.00 time: 1.01
+TRAINING:
+[40,    61] loss: 0.066 acc: 98.46 time: 13.87
+TESTING:
+Accuracy of the network on the 10000 test images: 56.92 %
+Average loss on the 10000 test images: 3.038
+TRAINING:
+[41,     1] loss: 0.000 acc: 100.00 time: 0.91
+TRAINING:
+[41,    61] loss: 0.068 acc: 98.26 time: 14.19
+TESTING:
+Accuracy of the network on the 10000 test images: 55.76 %
+Average loss on the 10000 test images: 3.139
+TRAINING:
+[42,     1] loss: 0.001 acc: 97.66 time: 1.09
+TRAINING:
+[42,    61] loss: 0.074 acc: 98.16 time: 14.27
+TESTING:
+Accuracy of the network on the 10000 test images: 54.80 %
+Average loss on the 10000 test images: 3.162
+TRAINING:
+[43,     1] loss: 0.002 acc: 96.09 time: 0.94
+TRAINING:
+[43,    61] loss: 0.091 acc: 98.01 time: 15.16
+TESTING:
+Accuracy of the network on the 10000 test images: 54.80 %
+Average loss on the 10000 test images: 3.247
+TRAINING:
+[44,     1] loss: 0.002 acc: 96.88 time: 0.91
+TRAINING:
+[44,    61] loss: 0.085 acc: 97.80 time: 14.48
+TESTING:
+Accuracy of the network on the 10000 test images: 55.81 %
+Average loss on the 10000 test images: 3.214
+TRAINING:
+[45,     1] loss: 0.001 acc: 97.66 time: 1.28
+TRAINING:
+[45,    61] loss: 0.105 acc: 97.37 time: 13.62
+TESTING:
+Accuracy of the network on the 10000 test images: 54.32 %
+Average loss on the 10000 test images: 3.342
+TRAINING:
+[46,     1] loss: 0.001 acc: 99.22 time: 1.55
+TRAINING:
+[46,    61] loss: 0.138 acc: 96.18 time: 13.72
+TESTING:
+Accuracy of the network on the 10000 test images: 52.10 %
+Average loss on the 10000 test images: 3.460
+TRAINING:
+[47,     1] loss: 0.001 acc: 98.44 time: 1.31
+TRAINING:
+[47,    61] loss: 0.176 acc: 95.34 time: 15.03
+TESTING:
+Accuracy of the network on the 10000 test images: 50.75 %
+Average loss on the 10000 test images: 3.665
+TRAINING:
+[48,     1] loss: 0.007 acc: 85.94 time: 1.01
+TRAINING:
+[48,    61] loss: 0.206 acc: 94.15 time: 14.42
+TESTING:
+Accuracy of the network on the 10000 test images: 52.77 %
+Average loss on the 10000 test images: 3.681
+TRAINING:
+[49,     1] loss: 0.003 acc: 93.75 time: 1.38
+TRAINING:
+[49,    61] loss: 0.156 acc: 95.53 time: 13.64
+TESTING:
+Accuracy of the network on the 10000 test images: 51.62 %
+Average loss on the 10000 test images: 3.677
+TRAINING:
+[50,     1] loss: 0.002 acc: 97.66 time: 1.62
+TRAINING:
+[50,    61] loss: 0.114 acc: 96.93 time: 13.63
+TESTING:
+Accuracy of the network on the 10000 test images: 55.76 %
+Average loss on the 10000 test images: 3.283
+TRAINING:
+[51,     1] loss: 0.001 acc: 99.22 time: 1.41
+TRAINING:
+[51,    61] loss: 0.086 acc: 97.60 time: 14.47
+TESTING:
+Accuracy of the network on the 10000 test images: 56.15 %
+Average loss on the 10000 test images: 3.352
+TRAINING:
+[52,     1] loss: 0.001 acc: 99.22 time: 1.01
+TRAINING:
+[52,    61] loss: 0.061 acc: 98.35 time: 13.92
+TESTING:
+Accuracy of the network on the 10000 test images: 56.01 %
+Average loss on the 10000 test images: 3.333
+TRAINING:
+[53,     1] loss: 0.000 acc: 100.00 time: 1.41
+TRAINING:
+[53,    61] loss: 0.059 acc: 98.39 time: 14.73
+TESTING:
+Accuracy of the network on the 10000 test images: 56.44 %
+Average loss on the 10000 test images: 3.211
+TRAINING:
+[54,     1] loss: 0.001 acc: 99.22 time: 1.74
+TRAINING:
+[54,    61] loss: 0.053 acc: 98.54 time: 14.01
+TESTING:
+Accuracy of the network on the 10000 test images: 57.45 %
+Average loss on the 10000 test images: 3.158
+TRAINING:
+[55,     1] loss: 0.001 acc: 97.66 time: 1.08
+TRAINING:
+[55,    61] loss: 0.050 acc: 98.46 time: 14.70
+TESTING:
+Accuracy of the network on the 10000 test images: 56.92 %
+Average loss on the 10000 test images: 3.156
+TRAINING:
+[56,     1] loss: 0.000 acc: 100.00 time: 1.25
+TRAINING:
+[56,    61] loss: 0.046 acc: 98.57 time: 14.70
+TESTING:
+Accuracy of the network on the 10000 test images: 57.16 %
+Average loss on the 10000 test images: 3.229
+TRAINING:
+[57,     1] loss: 0.000 acc: 100.00 time: 1.28
+TRAINING:
+[57,    61] loss: 0.045 acc: 98.58 time: 13.44
+TESTING:
+Accuracy of the network on the 10000 test images: 57.16 %
+Average loss on the 10000 test images: 3.152
+TRAINING:
+[58,     1] loss: 0.000 acc: 99.22 time: 1.00
+TRAINING:
+[58,    61] loss: 0.043 acc: 98.67 time: 14.38
+TESTING:
+Accuracy of the network on the 10000 test images: 58.47 %
+Average loss on the 10000 test images: 3.127
+TRAINING:
+[59,     1] loss: 0.000 acc: 100.00 time: 0.89
+TRAINING:
+[59,    61] loss: 0.033 acc: 98.72 time: 14.57
+TESTING:
+Accuracy of the network on the 10000 test images: 57.69 %
+Average loss on the 10000 test images: 3.108
+TRAINING:
+[60,     1] loss: 0.001 acc: 97.66 time: 1.26
+TRAINING:
+[60,    61] loss: 0.036 acc: 98.68 time: 14.63
+TESTING:
+Accuracy of the network on the 10000 test images: 58.08 %
+Average loss on the 10000 test images: 3.143
+TRAINING:
+[61,     1] loss: 0.001 acc: 97.66 time: 1.24
+TRAINING:
+[61,    61] loss: 0.044 acc: 98.32 time: 14.14
+TESTING:
+Accuracy of the network on the 10000 test images: 56.39 %
+Average loss on the 10000 test images: 3.377
+TRAINING:
+[62,     1] loss: 0.001 acc: 98.44 time: 1.12
+TRAINING:
+[62,    61] loss: 0.048 acc: 98.46 time: 13.80
+TESTING:
+Accuracy of the network on the 10000 test images: 56.83 %
+Average loss on the 10000 test images: 3.374
+TRAINING:
+[63,     1] loss: 0.001 acc: 99.22 time: 1.71
+TRAINING:
+[63,    61] loss: 0.072 acc: 98.09 time: 13.60
+TESTING:
+Accuracy of the network on the 10000 test images: 53.98 %
+Average loss on the 10000 test images: 3.626
+TRAINING:
+[64,     1] loss: 0.001 acc: 99.22 time: 1.29
+TRAINING:
+[64,    61] loss: 0.094 acc: 97.23 time: 14.93
+TESTING:
+Accuracy of the network on the 10000 test images: 52.10 %
+Average loss on the 10000 test images: 3.707
+TRAINING:
+[65,     1] loss: 0.002 acc: 96.88 time: 1.35
+TRAINING:
+[65,    61] loss: 0.175 acc: 94.87 time: 13.88
+TESTING:
+Accuracy of the network on the 10000 test images: 50.94 %
+Average loss on the 10000 test images: 3.798
+TRAINING:
+[66,     1] loss: 0.003 acc: 94.53 time: 1.13
+TRAINING:
+[66,    61] loss: 0.275 acc: 91.88 time: 13.51
+TESTING:
+Accuracy of the network on the 10000 test images: 52.63 %
+Average loss on the 10000 test images: 3.734
+TRAINING:
+[67,     1] loss: 0.004 acc: 91.41 time: 1.22
+TRAINING:
+[67,    61] loss: 0.177 acc: 94.66 time: 14.02
+TESTING:
+Accuracy of the network on the 10000 test images: 54.12 %
+Average loss on the 10000 test images: 3.610
+TRAINING:
+[68,     1] loss: 0.001 acc: 98.44 time: 0.99
+TRAINING:
+[68,    61] loss: 0.094 acc: 97.19 time: 14.55
+TESTING:
+Accuracy of the network on the 10000 test images: 56.78 %
+Average loss on the 10000 test images: 3.333
+TRAINING:
+[69,     1] loss: 0.001 acc: 99.22 time: 1.09
+TRAINING:
+[69,    61] loss: 0.061 acc: 98.10 time: 15.28
+TESTING:
+Accuracy of the network on the 10000 test images: 57.26 %
+Average loss on the 10000 test images: 3.486
+TRAINING:
+[70,     1] loss: 0.001 acc: 98.44 time: 1.05
+TRAINING:
+[70,    61] loss: 0.050 acc: 98.42 time: 15.29
+TESTING:
+Accuracy of the network on the 10000 test images: 57.21 %
+Average loss on the 10000 test images: 3.296
+TRAINING:
+[71,     1] loss: 0.000 acc: 99.22 time: 1.30
+TRAINING:
+[71,    61] loss: 0.044 acc: 98.48 time: 13.74
+TESTING:
+Accuracy of the network on the 10000 test images: 57.84 %
+Average loss on the 10000 test images: 3.194
+TRAINING:
+[72,     1] loss: 0.001 acc: 99.22 time: 1.34
+TRAINING:
+[72,    61] loss: 0.036 acc: 98.68 time: 14.26
+TESTING:
+Accuracy of the network on the 10000 test images: 58.51 %
+Average loss on the 10000 test images: 3.186
+TRAINING:
+[73,     1] loss: 0.000 acc: 100.00 time: 1.05
+TRAINING:
+[73,    61] loss: 0.033 acc: 98.66 time: 14.43
+TESTING:
+Accuracy of the network on the 10000 test images: 58.76 %
+Average loss on the 10000 test images: 3.285
+TRAINING:
+[74,     1] loss: 0.000 acc: 99.22 time: 0.89
+TRAINING:
+[74,    61] loss: 0.032 acc: 98.67 time: 15.01
+TESTING:
+Accuracy of the network on the 10000 test images: 59.00 %
+Average loss on the 10000 test images: 3.142
+TRAINING:
+[75,     1] loss: 0.000 acc: 100.00 time: 1.14
+TRAINING:
+[75,    61] loss: 0.028 acc: 98.79 time: 15.18
+TESTING:
+Accuracy of the network on the 10000 test images: 58.03 %
+Average loss on the 10000 test images: 3.110
+TRAINING:
+[76,     1] loss: 0.000 acc: 100.00 time: 0.95
+TRAINING:
+[76,    61] loss: 0.025 acc: 98.65 time: 15.31
+TESTING:
+Accuracy of the network on the 10000 test images: 58.80 %
+Average loss on the 10000 test images: 3.184
+TRAINING:
+[77,     1] loss: 0.000 acc: 99.22 time: 1.46
+TRAINING:
+[77,    61] loss: 0.026 acc: 98.78 time: 14.11
+TESTING:
+Accuracy of the network on the 10000 test images: 58.90 %
+Average loss on the 10000 test images: 3.077
+TRAINING:
+[78,     1] loss: 0.000 acc: 99.22 time: 1.33
+TRAINING:
+[78,    61] loss: 0.024 acc: 98.92 time: 15.08
+TESTING:
+Accuracy of the network on the 10000 test images: 58.71 %
+Average loss on the 10000 test images: 3.140
+TRAINING:
+[79,     1] loss: 0.000 acc: 100.00 time: 1.57
+TRAINING:
+[79,    61] loss: 0.022 acc: 98.78 time: 13.89
+TESTING:
+Accuracy of the network on the 10000 test images: 59.14 %
+Average loss on the 10000 test images: 3.107
+TRAINING:
+[80,     1] loss: 0.000 acc: 100.00 time: 1.38
+TRAINING:
+[80,    61] loss: 0.024 acc: 98.71 time: 13.74
+TESTING:
+Accuracy of the network on the 10000 test images: 59.29 %
+Average loss on the 10000 test images: 3.113
+TRAINING:
+[81,     1] loss: 0.000 acc: 100.00 time: 1.17
+TRAINING:
+[81,    61] loss: 0.022 acc: 98.79 time: 13.63
+TESTING:
+Accuracy of the network on the 10000 test images: 58.95 %
+Average loss on the 10000 test images: 3.142
+TRAINING:
+[82,     1] loss: 0.000 acc: 98.44 time: 1.03
+TRAINING:
+[82,    61] loss: 0.022 acc: 98.65 time: 14.05
+TESTING:
+Accuracy of the network on the 10000 test images: 59.04 %
+Average loss on the 10000 test images: 3.118
+TRAINING:
+[83,     1] loss: 0.000 acc: 99.22 time: 1.06
+TRAINING:
+[83,    61] loss: 0.022 acc: 98.67 time: 14.59
+TESTING:
+Accuracy of the network on the 10000 test images: 59.29 %
+Average loss on the 10000 test images: 3.158
+TRAINING:
+[84,     1] loss: 0.000 acc: 99.22 time: 1.04
+TRAINING:
+[84,    61] loss: 0.021 acc: 98.79 time: 14.37
+TESTING:
+Accuracy of the network on the 10000 test images: 59.72 %
+Average loss on the 10000 test images: 3.160
+TRAINING:
+[85,     1] loss: 0.000 acc: 100.00 time: 1.01
+TRAINING:
+[85,    61] loss: 0.022 acc: 98.79 time: 13.92
+TESTING:
+Accuracy of the network on the 10000 test images: 58.32 %
+Average loss on the 10000 test images: 3.259
+TRAINING:
+[86,     1] loss: 0.000 acc: 98.44 time: 1.47
+TRAINING:
+[86,    61] loss: 0.026 acc: 98.76 time: 13.88
+TESTING:
+Accuracy of the network on the 10000 test images: 58.66 %
+Average loss on the 10000 test images: 3.120
+TRAINING:
+[87,     1] loss: 0.001 acc: 98.44 time: 1.94
+TRAINING:
+[87,    61] loss: 0.034 acc: 98.50 time: 13.68
+TESTING:
+Accuracy of the network on the 10000 test images: 55.57 %
+Average loss on the 10000 test images: 3.552
+TRAINING:
+[88,     1] loss: 0.000 acc: 99.22 time: 1.03
+TRAINING:
+[88,    61] loss: 0.130 acc: 96.16 time: 14.01
+TESTING:
+Accuracy of the network on the 10000 test images: 43.99 %
+Average loss on the 10000 test images: 4.598
+TRAINING:
+[89,     1] loss: 0.006 acc: 92.97 time: 1.01
+TRAINING:
+[89,    61] loss: 0.587 acc: 83.07 time: 14.64
+TESTING:
+Accuracy of the network on the 10000 test images: 48.19 %
+Average loss on the 10000 test images: 4.012
+TRAINING:
+[90,     1] loss: 0.007 acc: 84.38 time: 1.18
+TRAINING:
+[90,    61] loss: 0.310 acc: 90.57 time: 13.76
+TESTING:
+Accuracy of the network on the 10000 test images: 54.94 %
+Average loss on the 10000 test images: 3.452
+TRAINING:
+[91,     1] loss: 0.001 acc: 97.66 time: 1.24
+TRAINING:
+[91,    61] loss: 0.096 acc: 96.84 time: 14.97
+TESTING:
+Accuracy of the network on the 10000 test images: 57.07 %
+Average loss on the 10000 test images: 3.211
+TRAINING:
+[92,     1] loss: 0.001 acc: 99.22 time: 1.14
+TRAINING:
+[92,    61] loss: 0.052 acc: 98.31 time: 14.62
+TESTING:
+Accuracy of the network on the 10000 test images: 58.56 %
+Average loss on the 10000 test images: 3.137
+TRAINING:
+[93,     1] loss: 0.000 acc: 99.22 time: 1.36
+TRAINING:
+[93,    61] loss: 0.038 acc: 98.50 time: 13.68
+TESTING:
+Accuracy of the network on the 10000 test images: 58.76 %
+Average loss on the 10000 test images: 3.123
+TRAINING:
+[94,     1] loss: 0.000 acc: 98.44 time: 1.30
+TRAINING:
+[94,    61] loss: 0.027 acc: 98.71 time: 14.60
+TESTING:
+Accuracy of the network on the 10000 test images: 59.19 %
+Average loss on the 10000 test images: 3.110
+TRAINING:
+[95,     1] loss: 0.000 acc: 99.22 time: 1.19
+TRAINING:
+[95,    61] loss: 0.026 acc: 98.74 time: 14.51
+TESTING:
+Accuracy of the network on the 10000 test images: 59.38 %
+Average loss on the 10000 test images: 3.079
+TRAINING:
+[96,     1] loss: 0.001 acc: 96.88 time: 1.07
+TRAINING:
+[96,    61] loss: 0.023 acc: 98.78 time: 14.85
+TESTING:
+Accuracy of the network on the 10000 test images: 59.48 %
+Average loss on the 10000 test images: 3.115
+TRAINING:
+[97,     1] loss: 0.000 acc: 98.44 time: 1.24
+TRAINING:
+[97,    61] loss: 0.024 acc: 98.79 time: 14.16
+TESTING:
+Accuracy of the network on the 10000 test images: 59.14 %
+Average loss on the 10000 test images: 3.092
+TRAINING:
+[98,     1] loss: 0.000 acc: 99.22 time: 0.97
+TRAINING:
+[98,    61] loss: 0.023 acc: 98.83 time: 14.36
+TESTING:
+Accuracy of the network on the 10000 test images: 59.53 %
+Average loss on the 10000 test images: 3.075
+TRAINING:
+[99,     1] loss: 0.000 acc: 99.22 time: 1.21
+TRAINING:
+[99,    61] loss: 0.022 acc: 98.84 time: 14.47
+TESTING:
+Accuracy of the network on the 10000 test images: 59.38 %
+Average loss on the 10000 test images: 3.083
+TRAINING:
+[100,     1] loss: 0.000 acc: 100.00 time: 1.04
+TRAINING:
+[100,    61] loss: 0.022 acc: 98.82 time: 13.99
+TESTING:
+Accuracy of the network on the 10000 test images: 59.91 %
+Average loss on the 10000 test images: 3.101
+Finished Training

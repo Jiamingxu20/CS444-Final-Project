@@ -93,17 +93,20 @@ def run_test(net, testloader, criterion, device):
 # Both the self-supervised rotation task and supervised CIFAR10 classification are
 # trained with the CrossEntropyLoss, so we can use the training loop code.
 def train(net, criterion, optimizer, num_epochs, decay_epochs, init_lr, device, trainloader, test_loader):
-
+    print("Training begins")
     for epoch in range(num_epochs):  # loop over the dataset multiple times
 
         running_loss = 0.0
         running_correct = 0.0
         running_total = 0.0
+        counter = 0
         start_time = time.time()
 
         net.train()
         for i, (imgs, labels) in enumerate(trainloader):
+            
             # adjust_learning_rate(optimizer, epoch, init_lr, decay_epochs)
+            
             device = torch.device("cuda")
 
             inputs = imgs.clone().detach().to(device)
@@ -119,17 +122,20 @@ def train(net, criterion, optimizer, num_epochs, decay_epochs, init_lr, device, 
             optimizer.step()
 
             # print statistics
-            print_freq = 100
+            print_freq = 60
             running_loss += loss.item()
 
             # calc acc
             running_total += labels.size(0)
             running_correct += (predicted == labels).sum().item()
 
-            if i % print_freq == (print_freq - 1):    # print every 2000 mini-batches
-                print(f'[{epoch + 1}, {i + 1:5d}] loss: {running_loss / print_freq:.3f} acc: {100*running_correct / running_total:.2f} time: {time.time() - start_time:.2f}')
-                running_loss, running_correct, running_total = 0.0, 0.0, 0.0
-                start_time = time.time()
+            counter += 1
+            
+        # log train loss and acc
+        print('TRAINING:')
+        print(f'[{epoch + 1}, {i + 1:5d}] loss: {running_loss / counter:.3f} acc: {100*running_correct / running_total:.2f} time: {time.time() - start_time:.2f}')
+        running_loss, running_correct, running_total = 0.0, 0.0, 0.0
+        start_time = time.time()
 
         net.eval()
         run_test(net, test_loader, criterion, device)

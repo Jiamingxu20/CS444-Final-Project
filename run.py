@@ -1,22 +1,19 @@
 import torch
-import torchvision
 import torchvision.transforms as transforms
-import numpy as np
 import torch.nn as nn
-import torch.nn.functional as F
 import torch.optim as optim
-from torchvision.models import resnet18
+from torchvision.models import resnet18, densenet121
 from utils import *
 from torch.utils.data import DataLoader, random_split
 
 # Load the data
 
-batch_size = 64
+batch_size = 128
 
 transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Resize((225, 225)),
-    # transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
+    transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
 ])
 
 
@@ -34,30 +31,37 @@ train_loader = DataLoader(
     train_dataset, 
     batch_size=batch_size,
     shuffle=True,
-    num_workers=2
+    num_workers=4
 )
 
 test_loader = DataLoader(
     test_dataset, 
     batch_size=batch_size,
     shuffle=False, # not to shuffle because we want consistent performance evaluation
-    num_workers=2
+    num_workers=4
 )
 
+print("Training and testing datasets ready")
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 get_num_classes = all_dataset.get_num_classes()
 
-net = resnet18(num_classes=get_num_classes)
+# net = resnet18(num_classes=get_num_classes)
+net = densenet121(num_classes=get_num_classes)
 net = net.to(device)
 
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(net.parameters(), lr=0.001)
 
+print("Network ready to train")
+
 # Trian 
-train(net, criterion, optimizer, num_epochs=45, decay_epochs=15, init_lr=0.01,
+train(net, criterion, optimizer, num_epochs=100, decay_epochs=15, init_lr=0.01,
        device=device, trainloader=train_loader, test_loader=test_loader)
 
 # Save the model
-torch.save(net.state_dict(), 'coin_clas.pth')
+torch.save(net.state_dict(), 'coin_clas_resnet18_100epoch.pth')
+
+
+# 
