@@ -1,10 +1,9 @@
 import os
 import torch
 import pandas as pd
-import torchvision.transforms as transforms
 import numpy as np
 import time
-import matplotlib.pyplot as plt
+import math
 from torch.utils.data import Dataset
 from sklearn.preprocessing import LabelEncoder
 import imageio.v3 as iio
@@ -67,6 +66,28 @@ class CoinDataset(Dataset):
         indices = self.labelencoder.transform(classes)
         return dict(zip(classes, indices))
 
+class TransformedDataset(Dataset):
+    def __init__(self, dataset, transform=None):
+        self.dataset = dataset
+        self.transform = transform
+        
+    def __getitem__(self, idx):
+        image, label = self.dataset[idx]
+        if self.transform:
+            image = self.transform(image)
+        return image, label
+    
+    def __len__(self):
+        return len(self.dataset)
+
+
+
+
+def adjust_learning_rate(optimizer, epoch, init_lr, total_epochs):
+    lr = init_lr * 0.5 * (1 + math.cos(math.pi * epoch / total_epochs))
+    for param_group in optimizer.param_groups:
+        param_group['lr'] = lr
+
 
 def run_test(net, testloader, criterion, device):
     correct = 0
@@ -92,7 +113,7 @@ def run_test(net, testloader, criterion, device):
 
 # Both the self-supervised rotation task and supervised CIFAR10 classification are
 # trained with the CrossEntropyLoss, so we can use the training loop code.
-def train(net, criterion, optimizer, num_epochs, decay_epochs, init_lr, device, trainloader, test_loader):
+def train(net, criterion, optimizer, num_epochs, init_lr, device, trainloader, test_loader):
     print("Training begins")
     for epoch in range(num_epochs):  # loop over the dataset multiple times
 
@@ -105,7 +126,7 @@ def train(net, criterion, optimizer, num_epochs, decay_epochs, init_lr, device, 
         net.train()
         for i, (imgs, labels) in enumerate(trainloader):
             
-            # adjust_learning_rate(optimizer, epoch, init_lr, decay_epochs)
+            adjust_learning_rate(optimizer, epoch, init_lr, num_epochs)
             
             device = torch.device("cuda")
 
@@ -142,13 +163,6 @@ def train(net, criterion, optimizer, num_epochs, decay_epochs, init_lr, device, 
 
     print('Finished Training')
 
-
-
-def adjust_learning_rate(optimizer, epoch, init_lr, decay_epochs=30):
-    """Sets the learning rate to the initial LR decayed by 10 every 30 epochs"""
-    lr = init_lr * (0.1 ** (epoch // decay_epochs))
-    for param_group in optimizer.param_groups:
-        param_group['lr'] = lr
 
 
 
