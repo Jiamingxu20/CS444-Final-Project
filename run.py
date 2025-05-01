@@ -7,9 +7,24 @@ from torchvision.models import resnet18, densenet121
 from utils import *
 from torch.utils.data import DataLoader, random_split
 
-# Load the data
+# Hyperparameters:
+batch_size = 32
+dropout_rate = 0.4
+num_epochs = 100
+train_set_ratio = 0.5
+test_set_ratio = 1 - train_set_ratio
+pretrained = True
 
-batch_size = 128
+hyperparameters = {
+    'batch_size': batch_size, 
+    'dropout_rate': dropout_rate, 
+    'num_epochs': num_epochs, 
+    'train_set_ratio': train_set_ratio, 
+    'test_set_ratio': test_set_ratio, 
+    'pretrained': pretrained
+}
+
+print("hyperparameters = ", hyperparameters)
 
 test_transform = transforms.Compose([
     transforms.ToTensor(),
@@ -60,24 +75,29 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 get_num_classes = all_dataset.get_num_classes()
 
-net = resnet18()
-# net = densenet121()
-dropout_rate = 0.5
+net = resnet18(pretrained = pretrained)
+# net = densenet121(pretrained = pretrained)
 net.classifier = nn.Sequential(
     nn.Dropout(p=dropout_rate),
     nn.Linear(1024, get_num_classes)
 )
 net = net.to(device)
+print("model = ", net._get_name())
+
+
 
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(net.parameters(), lr=0.001)
 
 print("Network ready to train")
 
+
+
+
 # Trian 
-train(net, criterion, optimizer, num_epochs=100, init_lr=0.01,
+train(net, criterion, optimizer, num_epochs=num_epochs, init_lr=0.01,
        device=device, trainloader=train_loader, test_loader=test_loader)
 
 # Save the model
-torch.save(net.state_dict(), f'coin_clas_resnet18_100epoch_{time.time()}.pth')
+# torch.save(net.state_dict(), f'coin_clas_resnet18_100epoch_{time.time()}.pth')
 

@@ -107,8 +107,8 @@ def run_test(net, testloader, criterion, device):
             avg_test_loss += criterion(outputs, labels)  / len(testloader)
 
     print('TESTING:')
-    print(f'Accuracy of the network on the 10000 test images: {100 * correct / total:.2f} %')
-    print(f'Average loss on the 10000 test images: {avg_test_loss:.3f}')
+    print(f'Accuracy of the network on test images: {100 * correct / total:.2f} %')
+    print(f'Average loss on test images: {avg_test_loss:.3f}')
 
 
 # Both the self-supervised rotation task and supervised CIFAR10 classification are
@@ -154,7 +154,7 @@ def train(net, criterion, optimizer, num_epochs, init_lr, device, trainloader, t
             
         # log train loss and acc
         print('TRAINING:')
-        print(f'[{epoch + 1}, {i + 1:5d}] loss: {running_loss / counter:.3f} acc: {100*running_correct / running_total:.2f} time: {time.time() - start_time:.2f}')
+        print(f'epoch: {epoch} loss: {running_loss / counter:.3f} acc: {100*running_correct / running_total:.2f} time: {time.time() - start_time:.2f}')
         running_loss, running_correct, running_total = 0.0, 0.0, 0.0
         start_time = time.time()
 
