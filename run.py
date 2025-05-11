@@ -32,7 +32,7 @@ print("hyperparameters = ", hyperparameters)
 # Initialize wandb
 wandb.init(
     project="CS444-Final Project",  # Project name
-    name="Coin_detection",               # Run name
+    name="Coin_detection1",               # Run name
     config={
         'model': model,
         'batch_size': batch_size, 

@@ -1,0 +1,122 @@
+/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py:617: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Training and testing datasets ready
+Network ready to train
+Training begins
+Training batch:  0
+21.114234924316406
+48.31315040588379
+78.14454650878906
+105.20143127441406
+134.28576278686523
+160.53088760375977
+186.08867645263672
+212.65067863464355
+237.34428215026855
+261.7434024810791
+285.6843318939209
+309.1116485595703
+332.25298500061035
+355.6000347137451
+379.5341033935547
+402.6592903137207
+424.368803024292
+445.97471046447754
+467.53092765808105
+490.0889530181885
+511.7939281463623
+533.5218143463135
+554.9913482666016
+576.6181869506836
+598.4790019989014
+619.4274635314941
+641.2251682281494
+662.4558792114258
+683.8959407806396
+704.9560451507568
+725.1673564910889
+745.3823566436768
+765.6138648986816
+785.8259754180908
+806.2970085144043
+826.5891819000244
+846.5697860717773
+866.6789169311523
+886.6571636199951
+906.4836692810059
+926.0020217895508
+945.0329647064209
+964.7288570404053
+984.3373794555664
+1003.93869972229
+1023.2686176300049
+1042.1759796142578
+1060.673620223999
+1079.8511390686035
+1099.4461822509766
+1118.5206050872803
+1137.1162147521973
+1155.3523178100586
+1173.7911128997803
+1191.813289642334
+1209.60862159729
+1227.4428615570068
+1245.1983757019043
+1262.987154006958
+1280.7042713165283
+1298.3159427642822
+1316.3112239837646
+1333.9746704101562
+1351.0391597747803
+1368.4024963378906
+1385.117172241211
+1401.6435108184814
+1417.7922649383545
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/Resnet_Arcface.py", line 153, in <module>
+    train_arcface(backbone, arc_face, criterion, optimizer,
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 232, in train_arcface
+    for idx, (imgs, labels) in enumerate(train_loader):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 424, in _poll
+    r = wait([self], timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/Resnet_Arcface.py", line 153, in <module>
+    train_arcface(backbone, arc_face, criterion, optimizer,
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 232, in train_arcface
+    for idx, (imgs, labels) in enumerate(train_loader):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 424, in _poll
+    r = wait([self], timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt

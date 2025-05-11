@@ -1,0 +1,7 @@
+{"time":"2025-05-11T13:23:35.616954289-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/u/yzhang70/CS444-Final-Project/wandb/run-20250511_132335-hhlxtoyp/logs/debug-core.log"}
+{"time":"2025-05-11T13:23:35.724531307-05:00","level":"INFO","msg":"created new stream","id":"hhlxtoyp"}
+{"time":"2025-05-11T13:23:35.724548649-05:00","level":"INFO","msg":"stream: started","id":"hhlxtoyp"}
+{"time":"2025-05-11T13:23:35.724561744-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"hhlxtoyp"}
+{"time":"2025-05-11T13:23:35.725374536-05:00","level":"INFO","msg":"sender: started","stream_id":"hhlxtoyp"}
+{"time":"2025-05-11T13:23:35.725485785-05:00","level":"INFO","msg":"handler: started","stream_id":"hhlxtoyp"}
+{"time":"2025-05-11T13:23:35.858754435-05:00","level":"INFO","msg":"Starting system monitor"}

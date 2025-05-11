@@ -1,0 +1,33 @@
+/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py:617: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Training and testing datasets ready
+model =  ResNet
+Network ready to train
+Training begins
+TRAINING:
+epoch: 0 loss: 6.226 acc: 1.45 time: 91.49
+TESTING:
+Accuracy of the network on test images: 3.28 %
+Average loss on test images: 5.525
+TRAINING:
+epoch: 1 loss: 5.358 acc: 3.19 time: 91.03
+TESTING:
+Accuracy of the network on test images: 3.57 %
+Average loss on test images: 5.689
+TRAINING:
+epoch: 2 loss: 5.163 acc: 4.91 time: 91.50
+TESTING:
+Accuracy of the network on test images: 6.08 %
+Average loss on test images: 5.200
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/run.py", line 126, in <module>
+    train(net, criterion, optimizer, num_epochs=num_epochs, init_lr=0.01,
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 155, in train
+    running_loss += loss.item()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/run.py", line 126, in <module>
+    train(net, criterion, optimizer, num_epochs=num_epochs, init_lr=0.01,
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 155, in train
+    running_loss += loss.item()
+KeyboardInterrupt

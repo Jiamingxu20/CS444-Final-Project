@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/vit_run.py", line 47, in <module>
+    normalize = test_transform.transforms[-1]
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1931, in __getattr__
+    raise AttributeError(
+AttributeError: 'ImageClassification' object has no attribute 'transforms'
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/vit_run.py", line 47, in <module>
+    normalize = test_transform.transforms[-1]
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1931, in __getattr__
+    raise AttributeError(
+AttributeError: 'ImageClassification' object has no attribute 'transforms'

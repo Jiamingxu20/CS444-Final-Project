@@ -1,0 +1,83 @@
+/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py:617: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Training and testing datasets ready
+Network ready to train
+Training begins
+TRAINING: epoch 0 | loss: 20.975 | acc: 0.00% | time: 88.13s
+VALIDATION: epoch 0 | loss: 20.918 | acc: 0.00%
+TRAINING: epoch 1 | loss: 20.983 | acc: 0.00% | time: 89.21s
+VALIDATION: epoch 1 | loss: 20.915 | acc: 0.00%
+TRAINING: epoch 2 | loss: 20.981 | acc: 0.00% | time: 88.17s
+VALIDATION: epoch 2 | loss: 20.914 | acc: 0.00%
+TRAINING: epoch 3 | loss: 20.978 | acc: 0.00% | time: 87.34s
+VALIDATION: epoch 3 | loss: 20.912 | acc: 0.00%
+TRAINING: epoch 4 | loss: 20.987 | acc: 0.00% | time: 87.24s
+VALIDATION: epoch 4 | loss: 20.918 | acc: 0.00%
+TRAINING: epoch 5 | loss: 20.985 | acc: 0.00% | time: 85.42s
+VALIDATION: epoch 5 | loss: 20.919 | acc: 0.00%
+TRAINING: epoch 6 | loss: 20.989 | acc: 0.00% | time: 88.39s
+VALIDATION: epoch 6 | loss: 20.913 | acc: 0.00%
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/Resnet_Arcface.py", line 150, in <module>
+    train_arcface(backbone, arc_face, criterion, optimizer,
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 232, in train_arcface
+    for imgs, labels in train_loader:
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/multiprocessing/reductions.py", line 541, in rebuild_storage_fd
+    fd = df.detach()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 508, in Client
+    answer_challenge(c, authkey)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 752, in answer_challenge
+    message = connection.recv_bytes(256)         # reject large message
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/Resnet_Arcface.py", line 150, in <module>
+    train_arcface(backbone, arc_face, criterion, optimizer,
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 232, in train_arcface
+    for imgs, labels in train_loader:
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/multiprocessing/reductions.py", line 541, in rebuild_storage_fd
+    fd = df.detach()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 508, in Client
+    answer_challenge(c, authkey)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 752, in answer_challenge
+    message = connection.recv_bytes(256)         # reject large message
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt

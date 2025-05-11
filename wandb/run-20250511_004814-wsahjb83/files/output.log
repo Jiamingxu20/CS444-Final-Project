@@ -1,0 +1,85 @@
+/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py:617: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Training and testing datasets ready
+Downloading: "https://download.pytorch.org/models/vit_b_16-c867db91.pth" to /u/yzhang70/.cache/torch/hub/checkpoints/vit_b_16-c867db91.pth
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 330M/330M [00:01<00:00, 176MB/s]
+model =  VisionTransformer
+Network ready to train
+Training begins
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/vit_run.py", line 140, in <module>
+    train(
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 135, in train
+    for i, (imgs, labels) in enumerate(trainloader):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1465, in _next_data
+    return self._process_data(data)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1491, in _process_data
+    data.reraise()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/_utils.py", line 715, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 78, in __getitem__
+    image = self.transform(image)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torchvision/transforms/transforms.py", line 354, in forward
+    return F.resize(img, self.size, self.interpolation, self.max_size, self.antialias)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torchvision/transforms/functional.py", line 465, in resize
+    _, image_height, image_width = get_dimensions(img)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torchvision/transforms/functional.py", line 80, in get_dimensions
+    return F_pil.get_dimensions(img)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torchvision/transforms/_functional_pil.py", line 31, in get_dimensions
+    raise TypeError(f"Unexpected type {type(img)}")
+TypeError: Unexpected type <class 'numpy.ndarray'>
+
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/vit_run.py", line 140, in <module>
+    train(
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 135, in train
+    for i, (imgs, labels) in enumerate(trainloader):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1465, in _next_data
+    return self._process_data(data)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1491, in _process_data
+    data.reraise()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/_utils.py", line 715, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 78, in __getitem__
+    image = self.transform(image)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torchvision/transforms/transforms.py", line 354, in forward
+    return F.resize(img, self.size, self.interpolation, self.max_size, self.antialias)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torchvision/transforms/functional.py", line 465, in resize
+    _, image_height, image_width = get_dimensions(img)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torchvision/transforms/functional.py", line 80, in get_dimensions
+    return F_pil.get_dimensions(img)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torchvision/transforms/_functional_pil.py", line 31, in get_dimensions
+    raise TypeError(f"Unexpected type {type(img)}")
+TypeError: Unexpected type <class 'numpy.ndarray'>

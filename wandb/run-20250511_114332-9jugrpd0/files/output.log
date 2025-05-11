@@ -1,0 +1,90 @@
+/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py:617: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Training and testing datasets ready
+model =  VisionTransformer
+Network ready to train
+Training begins
+TRAINING:
+epoch: 0 loss: 5.997 acc: 0.64 time: 87.73
+TESTING:
+Accuracy of the network on test images: 0.29 %
+Average loss on test images: 5.824
+TRAINING:
+epoch: 1 loss: 5.705 acc: 0.86 time: 80.38
+TESTING:
+Accuracy of the network on test images: 0.97 %
+Average loss on test images: 5.652
+TRAINING:
+epoch: 2 loss: 5.586 acc: 1.22 time: 80.34
+TESTING:
+Accuracy of the network on test images: 0.97 %
+Average loss on test images: 5.562
+TRAINING:
+epoch: 3 loss: 5.585 acc: 1.38 time: 82.34
+TESTING:
+Accuracy of the network on test images: 1.74 %
+Average loss on test images: 5.543
+TRAINING:
+epoch: 4 loss: 5.516 acc: 1.80 time: 81.66
+TESTING:
+Accuracy of the network on test images: 2.32 %
+Average loss on test images: 5.439
+TRAINING:
+epoch: 5 loss: 5.471 acc: 2.13 time: 80.86
+TESTING:
+Accuracy of the network on test images: 1.64 %
+Average loss on test images: 5.455
+TRAINING:
+epoch: 6 loss: 5.429 acc: 2.82 time: 82.35
+TESTING:
+Accuracy of the network on test images: 4.25 %
+Average loss on test images: 5.314
+TRAINING:
+epoch: 7 loss: 5.324 acc: 4.05 time: 80.62
+TESTING:
+Accuracy of the network on test images: 5.79 %
+Average loss on test images: 5.314
+TRAINING:
+epoch: 8 loss: 5.303 acc: 4.02 time: 140.49
+TESTING:
+Accuracy of the network on test images: 5.98 %
+Average loss on test images: 5.274
+TRAINING:
+epoch: 9 loss: 5.292 acc: 4.26 time: 155.30
+TESTING:
+Accuracy of the network on test images: 3.47 %
+Average loss on test images: 5.378
+TRAINING:
+epoch: 10 loss: 5.369 acc: 3.22 time: 139.49
+TESTING:
+Accuracy of the network on test images: 3.38 %
+Average loss on test images: 5.403
+TRAINING:
+epoch: 11 loss: 5.324 acc: 3.94 time: 146.37
+TESTING:
+Accuracy of the network on test images: 3.09 %
+Average loss on test images: 5.342
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/vit_run_32.py", line 137, in <module>
+    train(
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 150, in train
+    loss.backward()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/vit_run_32.py", line 137, in <module>
+    train(
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 150, in train
+    loss.backward()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

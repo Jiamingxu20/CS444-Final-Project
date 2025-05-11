@@ -1,0 +1,139 @@
+/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py:617: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Training and testing datasets ready
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /u/yzhang70/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 44.7M/44.7M [00:00<00:00, 183MB/s]
+model =  ResNet
+Network ready to train
+Training begins
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/run.py", line 126, in <module>
+    train(net, criterion, optimizer, num_epochs=num_epochs, init_lr=0.01,
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 135, in train
+    for i, (imgs, labels) in enumerate(trainloader):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1465, in _next_data
+    return self._process_data(data)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1491, in _process_data
+    data.reraise()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/_utils.py", line 715, in reraise
+    raise exception
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 1.
+Original Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 34, in __getitem__
+    image = iio.imread(f"{img_name}.jpg")
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/v3.py", line 53, in imread
+    with imopen(uri, "r", **plugin_kwargs) as img_file:
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/imopen.py", line 281, in imopen
+    raise err_type(err_msg)
+OSError: Could not find a backend to open `data/train/9265.jpg`` with iomode `r`.
+Based on the extension, the following plugins might add capable backends:
+  pyav:  pip install imageio[pyav]
+  opencv:  pip install imageio[opencv]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 37, in __getitem__
+    image = iio.imread(f"{img_name}.png")
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/v3.py", line 53, in imread
+    with imopen(uri, "r", **plugin_kwargs) as img_file:
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/imopen.py", line 113, in imopen
+    request = Request(uri, io_mode, format_hint=format_hint, extension=extension)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/request.py", line 249, in __init__
+    self._parse_uri(uri)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/request.py", line 409, in _parse_uri
+    raise FileNotFoundError("No such file: '%s'" % fn)
+FileNotFoundError: No such file: '/u/yzhang70/CS444-Final-Project/data/train/9265.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 76, in __getitem__
+    image, label = self.dataset[idx]
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataset.py", line 412, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 39, in __getitem__
+    image = iio.imread(f"{img_name}.webp")
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/v3.py", line 53, in imread
+    with imopen(uri, "r", **plugin_kwargs) as img_file:
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/imopen.py", line 113, in imopen
+    request = Request(uri, io_mode, format_hint=format_hint, extension=extension)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/request.py", line 249, in __init__
+    self._parse_uri(uri)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/request.py", line 409, in _parse_uri
+    raise FileNotFoundError("No such file: '%s'" % fn)
+FileNotFoundError: No such file: '/u/yzhang70/CS444-Final-Project/data/train/9265.webp'
+
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/run.py", line 126, in <module>
+    train(net, criterion, optimizer, num_epochs=num_epochs, init_lr=0.01,
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 135, in train
+    for i, (imgs, labels) in enumerate(trainloader):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1465, in _next_data
+    return self._process_data(data)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1491, in _process_data
+    data.reraise()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/_utils.py", line 715, in reraise
+    raise exception
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 1.
+Original Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 34, in __getitem__
+    image = iio.imread(f"{img_name}.jpg")
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/v3.py", line 53, in imread
+    with imopen(uri, "r", **plugin_kwargs) as img_file:
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/imopen.py", line 281, in imopen
+    raise err_type(err_msg)
+OSError: Could not find a backend to open `data/train/9265.jpg`` with iomode `r`.
+Based on the extension, the following plugins might add capable backends:
+  pyav:  pip install imageio[pyav]
+  opencv:  pip install imageio[opencv]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 37, in __getitem__
+    image = iio.imread(f"{img_name}.png")
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/v3.py", line 53, in imread
+    with imopen(uri, "r", **plugin_kwargs) as img_file:
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/imopen.py", line 113, in imopen
+    request = Request(uri, io_mode, format_hint=format_hint, extension=extension)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/request.py", line 249, in __init__
+    self._parse_uri(uri)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/request.py", line 409, in _parse_uri
+    raise FileNotFoundError("No such file: '%s'" % fn)
+FileNotFoundError: No such file: '/u/yzhang70/CS444-Final-Project/data/train/9265.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 76, in __getitem__
+    image, label = self.dataset[idx]
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataset.py", line 412, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 39, in __getitem__
+    image = iio.imread(f"{img_name}.webp")
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/v3.py", line 53, in imread
+    with imopen(uri, "r", **plugin_kwargs) as img_file:
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/imopen.py", line 113, in imopen
+    request = Request(uri, io_mode, format_hint=format_hint, extension=extension)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/request.py", line 249, in __init__
+    self._parse_uri(uri)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/imageio/core/request.py", line 409, in _parse_uri
+    raise FileNotFoundError("No such file: '%s'" % fn)
+FileNotFoundError: No such file: '/u/yzhang70/CS444-Final-Project/data/train/9265.webp'

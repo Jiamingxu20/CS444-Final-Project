@@ -1,0 +1,15 @@
+{"time":"2025-05-11T00:47:36.001586118-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/u/yzhang70/CS444-Final-Project/wandb/run-20250511_004735-mry65uxl/logs/debug-core.log"}
+{"time":"2025-05-11T00:47:36.110948566-05:00","level":"INFO","msg":"created new stream","id":"mry65uxl"}
+{"time":"2025-05-11T00:47:36.110974785-05:00","level":"INFO","msg":"stream: started","id":"mry65uxl"}
+{"time":"2025-05-11T00:47:36.111006384-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"mry65uxl"}
+{"time":"2025-05-11T00:47:36.112106154-05:00","level":"INFO","msg":"sender: started","stream_id":"mry65uxl"}
+{"time":"2025-05-11T00:47:36.112165866-05:00","level":"INFO","msg":"handler: started","stream_id":"mry65uxl"}
+{"time":"2025-05-11T00:47:36.286645231-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-11T00:47:36.905732395-05:00","level":"INFO","msg":"stream: closing","id":"mry65uxl"}
+{"time":"2025-05-11T00:47:36.905751811-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-11T00:47:36.906858133-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-11T00:47:37.206759252-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-11T00:47:37.280275549-05:00","level":"INFO","msg":"handler: closed","stream_id":"mry65uxl"}
+{"time":"2025-05-11T00:47:37.280317318-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mry65uxl"}
+{"time":"2025-05-11T00:47:37.280394011-05:00","level":"INFO","msg":"sender: closed","stream_id":"mry65uxl"}
+{"time":"2025-05-11T00:47:37.282065982-05:00","level":"INFO","msg":"stream: closed","id":"mry65uxl"}

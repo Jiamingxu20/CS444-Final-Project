@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/vit_run.py", line 55, in <module>
+    transforms.Normalize(mean=weights.meta["mean"], std=weights.meta["std"]),
+KeyError: 'mean'
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/vit_run.py", line 55, in <module>
+    transforms.Normalize(mean=weights.meta["mean"], std=weights.meta["std"]),
+KeyError: 'mean'

@@ -5,10 +5,11 @@ import pandas as pd
 import numpy as np
 import time
 import math
+import torch.nn as nn
 from torch.utils.data import Dataset
 from sklearn.preprocessing import LabelEncoder
 import imageio.v3 as iio
-
+import torch.nn.functional as F
 
 # Datasets
 class CoinDataset(Dataset):
@@ -182,4 +183,116 @@ def train(net, criterion, optimizer, num_epochs, init_lr, device, trainloader, t
 
 
 
+class ArcMarginProduct(nn.Module):
+    def __init__(self, in_features, out_features, s=30.0, m=0.50, easy_margin=False):
+        super(ArcMarginProduct, self).__init__()
+        self.in_features = in_features
+        self.out_features = out_features
+        self.s = s
+        self.m = m
+        
+        self.weight = nn.Parameter(torch.FloatTensor(out_features, in_features))
 
+        nn.init.xavier_uniform_(self.weight)
+        self.easy_margin = easy_margin
+        self.cos_m = math.cos(m)
+        self.sin_m = math.sin(m)
+        self.th = math.cos(math.pi - m)
+        self.mm = math.sin(math.pi - m) * m
+
+
+    def forward(self, x, label):
+        cosine = F.linear(F.normalize(x), F.normalize(self.weight)) #[N, C]
+
+        sine = torch.sqrt(1.0 - torch.pow(cosine, 2)+1e-6)
+        phi = cosine * self.cos_m - sine * self.sin_m
+        if self.easy_margin:
+            phi = torch.where(cosine > 0, phi, cosine)
+        else:
+            phi = torch.where(cosine > self.th, phi, cosine - self.mm)
+        one_hot = torch.zeros_like(cosine)
+        one_hot.scatter_(1, label.view(-1, 1).long(), 1.0)
+
+        ouput = (one_hot * phi) + ((1.0 - one_hot) * cosine)
+        
+        return ouput * self.s
+    
+
+def train_arcface(backbone, arc_face, criterion, optimizer,
+          num_epochs, init_lr, device, train_loader, test_loader):
+    print("Training begins")
+    for epoch in range(num_epochs):
+        backbone.train()
+        arc_face.train()
+        running_loss, running_correct, running_total = 0.0, 0.0, 0.0
+        counter = 0
+
+        start_time = time.time()
+
+        for idx, (imgs, labels) in enumerate(train_loader):
+            if idx == 0:
+                print("Training batch: ", idx)
+            adjust_learning_rate(optimizer, epoch, init_lr, num_epochs)
+
+            imgs   = imgs.to(device)
+            labels = labels.to(device)
+
+            optimizer.zero_grad()
+
+
+            features = backbone(imgs)               # [N, feat_dim]
+
+            logits   = arc_face(features, labels)   # [N, num_classes]
+
+            loss     = criterion(logits, labels)
+            loss.backward()
+            optimizer.step()
+            
+            running_loss    += loss.item()
+            running_total   += labels.size(0)
+            running_correct += (logits.argmax(1) == labels).sum().item()
+            counter         += 1
+
+
+        train_loss = running_loss / counter
+        train_acc  = 100.0 * running_correct / running_total
+        elapsed    = time.time() - start_time
+
+        print(f'TRAINING: epoch {epoch} | '
+              f'loss: {train_loss:.3f} | acc: {train_acc:.2f}% | time: {elapsed:.2f}s')
+        wandb.log({
+            "epoch": epoch,
+            "train_loss": train_loss,
+            "train_acc": train_acc
+        })
+
+        backbone.eval()
+        arc_face.eval()
+        val_loss, val_correct, val_total = 0.0, 0.0, 0.0
+        val_counter = 0
+
+        with torch.no_grad():
+            for imgs, labels in test_loader:
+                imgs   = imgs.to(device)
+                labels = labels.to(device)
+
+                feats  = backbone(imgs)
+                logits = arc_face(feats, labels)
+                loss   = criterion(logits, labels)
+
+                val_loss    += loss.item()
+                val_total   += labels.size(0)
+                val_correct += (logits.argmax(1) == labels).sum().item()
+                val_counter += 1
+
+        val_loss = val_loss / val_counter
+        val_acc  = 100.0 * val_correct / val_total
+
+        print(f'VALIDATION: epoch {epoch} | '
+              f'loss: {val_loss:.3f} | acc: {val_acc:.2f}%')
+        wandb.log({
+            "test_loss": val_loss,
+            "test_acc": val_acc
+        })
+
+    print('Finished Training')

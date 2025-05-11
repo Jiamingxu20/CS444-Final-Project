@@ -1,0 +1,43 @@
+_wandb:
+    value:
+        cli_version: 0.19.7
+        m: []
+        python_version: 3.10.16
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+                - 55
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+                - 55
+            "3":
+                - 13
+                - 16
+                - 23
+                - 55
+            "4": 3.10.16
+            "5": 0.19.7
+            "8":
+                - 5
+            "12": 0.19.7
+            "13": linux-x86_64
+batch_size:
+    value: 32
+dropout_rate:
+    value: 0.4
+model:
+    value: vit_b_16
+num_epochs:
+    value: 200
+pretrained:
+    value: true
+test_set_ratio:
+    value: 0.5
+train_set_ratio:
+    value: 0.5

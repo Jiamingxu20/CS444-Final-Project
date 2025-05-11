@@ -1,0 +1,73 @@
+/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py:617: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Training and testing datasets ready
+Network ready to train
+Training begins
+Training batch:  0
+TRAINING: epoch 0 | loss: 8.534 | acc: 4.23% | time: 170.96s
+VALIDATION: epoch 0 | loss: 7.288 | acc: 7.53%
+Training batch:  0
+TRAINING: epoch 1 | loss: 5.978 | acc: 12.27% | time: 170.60s
+VALIDATION: epoch 1 | loss: 5.454 | acc: 14.29%
+Training batch:  0
+TRAINING: epoch 2 | loss: 4.429 | acc: 26.13% | time: 169.42s
+VALIDATION: epoch 2 | loss: 4.026 | acc: 31.95%
+Training batch:  0
+TRAINING: epoch 3 | loss: 3.360 | acc: 41.17% | time: 170.17s
+VALIDATION: epoch 3 | loss: 3.502 | acc: 45.17%
+Training batch:  0
+TRAINING: epoch 4 | loss: 2.644 | acc: 53.21% | time: 170.45s
+VALIDATION: epoch 4 | loss: 2.920 | acc: 54.73%
+Training batch:  0
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/Resnet_Arcface.py", line 153, in <module>
+    train_arcface(backbone, arc_face, criterion, optimizer,
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 232, in train_arcface
+    for idx, (imgs, labels) in enumerate(train_loader):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/multiprocessing/reductions.py", line 541, in rebuild_storage_fd
+    fd = df.detach()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 502, in Client
+    c = SocketClient(address)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 630, in SocketClient
+    s.connect(address)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/Resnet_Arcface.py", line 153, in <module>
+    train_arcface(backbone, arc_face, criterion, optimizer,
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 232, in train_arcface
+    for idx, (imgs, labels) in enumerate(train_loader):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/multiprocessing/reductions.py", line 541, in rebuild_storage_fd
+    fd = df.detach()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 502, in Client
+    c = SocketClient(address)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/connection.py", line 630, in SocketClient
+    s.connect(address)
+FileNotFoundError: [Errno 2] No such file or directory

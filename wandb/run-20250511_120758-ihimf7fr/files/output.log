@@ -1,0 +1,108 @@
+/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py:617: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Training and testing datasets ready
+model =  VisionTransformer
+Network ready to train
+Training begins
+TRAINING:
+epoch: 0 loss: 5.984 acc: 0.56 time: 81.42
+TESTING:
+Accuracy of the network on test images: 0.68 %
+Average loss on test images: 5.778
+TRAINING:
+epoch: 1 loss: 5.651 acc: 1.25 time: 80.78
+TESTING:
+Accuracy of the network on test images: 1.74 %
+Average loss on test images: 5.538
+TRAINING:
+epoch: 2 loss: 5.614 acc: 1.19 time: 80.37
+TESTING:
+Accuracy of the network on test images: 1.83 %
+Average loss on test images: 5.521
+TRAINING:
+epoch: 3 loss: 5.503 acc: 1.82 time: 83.65
+TESTING:
+Accuracy of the network on test images: 2.41 %
+Average loss on test images: 5.494
+TRAINING:
+epoch: 4 loss: 5.477 acc: 2.03 time: 81.17
+TESTING:
+Accuracy of the network on test images: 3.28 %
+Average loss on test images: 5.441
+TRAINING:
+epoch: 5 loss: 5.492 acc: 2.63 time: 81.21
+TESTING:
+Accuracy of the network on test images: 2.32 %
+Average loss on test images: 5.505
+TRAINING:
+epoch: 6 loss: 5.619 acc: 1.84 time: 83.05
+TESTING:
+Accuracy of the network on test images: 3.09 %
+Average loss on test images: 5.496
+TRAINING:
+epoch: 7 loss: 5.605 acc: 1.61 time: 81.08
+TESTING:
+Accuracy of the network on test images: 2.12 %
+Average loss on test images: 5.412
+TRAINING:
+epoch: 8 loss: 5.473 acc: 2.63 time: 80.62
+TESTING:
+Accuracy of the network on test images: 2.41 %
+Average loss on test images: 5.446
+TRAINING:
+epoch: 9 loss: 5.525 acc: 2.18 time: 81.77
+TESTING:
+Accuracy of the network on test images: 2.99 %
+Average loss on test images: 5.434
+TRAINING:
+epoch: 10 loss: 5.493 acc: 2.44 time: 82.06
+TESTING:
+Accuracy of the network on test images: 3.28 %
+Average loss on test images: 5.486
+TRAINING:
+epoch: 11 loss: 5.471 acc: 2.54 time: 83.13
+TESTING:
+Accuracy of the network on test images: 2.32 %
+Average loss on test images: 5.563
+TRAINING:
+epoch: 12 loss: 5.564 acc: 1.89 time: 90.63
+TESTING:
+Accuracy of the network on test images: 1.64 %
+Average loss on test images: 5.543
+TRAINING:
+epoch: 13 loss: 5.554 acc: 1.70 time: 99.18
+TESTING:
+Accuracy of the network on test images: 1.54 %
+Average loss on test images: 5.588
+TRAINING:
+epoch: 14 loss: 5.550 acc: 1.64 time: 96.83
+TESTING:
+Accuracy of the network on test images: 2.03 %
+Average loss on test images: 5.541
+TRAINING:
+epoch: 15 loss: 5.571 acc: 1.65 time: 99.34
+TESTING:
+Accuracy of the network on test images: 1.74 %
+Average loss on test images: 5.516
+TRAINING:
+epoch: 16 loss: 5.577 acc: 1.68 time: 94.99
+TESTING:
+Accuracy of the network on test images: 1.83 %
+Average loss on test images: 5.593
+TRAINING:
+epoch: 17 loss: 5.601 acc: 1.67 time: 93.78
+TESTING:
+Accuracy of the network on test images: 1.25 %
+Average loss on test images: 5.684
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/vit_run_32.py", line 137, in <module>
+    train(
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 155, in train
+    print_freq = 60
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/vit_run_32.py", line 137, in <module>
+    train(
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 155, in train
+    print_freq = 60
+KeyboardInterrupt

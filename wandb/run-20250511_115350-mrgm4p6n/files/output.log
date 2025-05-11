@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/ConvNext_32.py", line 39, in <module>
+    mean, std = weights.meta["mean"], weights.meta["std"]
+KeyError: 'mean'
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/ConvNext_32.py", line 39, in <module>
+    mean, std = weights.meta["mean"], weights.meta["std"]
+KeyError: 'mean'
