@@ -1,21 +1,23 @@
-import time
 import torch
+import wandb
 import torchvision.transforms as transforms
 import torch.nn as nn
 import torch.optim as optim
-from torchvision.models import resnet18, densenet121
+from torchvision.models import resnet18, densenet121, ResNet18_Weights, DenseNet121_Weights
 from utils import *
 from torch.utils.data import DataLoader, random_split
 
 # Hyperparameters:
+model = 'resnet18'  # or 'densenet121' 'resnet18'
 batch_size = 32
 dropout_rate = 0.4
-num_epochs = 100
+num_epochs = 200
 train_set_ratio = 0.5
 test_set_ratio = 1 - train_set_ratio
 pretrained = True
 
 hyperparameters = {
+    'model': model,
     'batch_size': batch_size, 
     'dropout_rate': dropout_rate, 
     'num_epochs': num_epochs, 
@@ -25,6 +27,25 @@ hyperparameters = {
 }
 
 print("hyperparameters = ", hyperparameters)
+
+
+# Initialize wandb
+wandb.init(
+    project="CS444-Final Project",  # Project name
+    name="Coin_detection",               # Run name
+    config={
+        'model': model,
+        'batch_size': batch_size, 
+        'dropout_rate': dropout_rate, 
+        'num_epochs': num_epochs, 
+        'train_set_ratio': train_set_ratio, 
+        'test_set_ratio': test_set_ratio, 
+        'pretrained': pretrained
+    }
+)
+
+
+
 
 test_transform = transforms.Compose([
     transforms.ToTensor(),
@@ -75,8 +96,13 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 get_num_classes = all_dataset.get_num_classes()
 
-net = resnet18(pretrained = pretrained)
-# net = densenet121(pretrained = pretrained)
+if model == 'resnet18':
+    net = resnet18(weights=ResNet18_Weights.DEFAULT)
+elif model == 'densenet121':
+    net = densenet121(weights=DenseNet121_Weights.DEFAULT)
+else:
+    raise ValueError("Invalid model name. Choose either 'resnet18' or 'densenet121'.")
+
 net.classifier = nn.Sequential(
     nn.Dropout(p=dropout_rate),
     nn.Linear(1024, get_num_classes)
@@ -92,6 +118,8 @@ optimizer = optim.Adam(net.parameters(), lr=0.001)
 print("Network ready to train")
 
 
+wandb.config.update({"net_summary": str(net)})
+wandb.watch(net, log="all")
 
 
 # Trian 

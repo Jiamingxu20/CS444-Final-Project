@@ -1,0 +1,17 @@
+wandb: Currently logged in as: jiamingxu20 (cs444_final_project) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.19.11
+wandb: Run data is saved locally in /u/jx30/CS444-Final-Project/wandb/run-20250510_230410-h6j0mm4d
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run Coin_detection
+wandb: ⭐️ View project at https://wandb.ai/cs444_final_project/CS444-Final%20Project
+wandb: 🚀 View run at https://wandb.ai/cs444_final_project/CS444-Final%20Project/runs/h6j0mm4d
+hyperparameters =  {'model': 'densenet121', 'batch_size': 32, 'dropout_rate': 0.4, 'num_epochs': 200, 'train_set_ratio': 0.5, 'test_set_ratio': 0.5, 'pretrained': True}
+Training and testing datasets ready
+model =  DenseNet
+Network ready to train
+Training begins
+TRAINING:
+epoch: 0 loss: 6.169 acc: 1.32 time: 41.96
+TESTING:
+Accuracy of the network on test images: 2.41 %
+Average loss on test images: 6.213

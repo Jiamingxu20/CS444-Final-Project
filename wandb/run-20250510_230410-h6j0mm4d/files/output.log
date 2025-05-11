@@ -1,0 +1,9 @@
+Training and testing datasets ready
+model =  DenseNet
+Network ready to train
+Training begins
+TRAINING:
+epoch: 0 loss: 6.169 acc: 1.32 time: 41.96
+TESTING:
+Accuracy of the network on test images: 2.41 %
+Average loss on test images: 6.213

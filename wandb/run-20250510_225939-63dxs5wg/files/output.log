@@ -1,0 +1,12 @@
+Training and testing datasets ready
+model =  ResNet
+Network ready to train
+Training begins
+TRAINING:
+epoch: 0 loss: 6.289 acc: 1.28 time: 40.64
+Traceback (most recent call last):
+  File "/u/jx30/CS444-Final-Project/run.py", line 126, in <module>
+    train(net, criterion, optimizer, num_epochs=num_epochs, init_lr=0.01,
+  File "/u/jx30/CS444-Final-Project/utils.py", line 172, in train
+    "train_acc": 100 * running_correct / running_total,
+ZeroDivisionError: float division by zero

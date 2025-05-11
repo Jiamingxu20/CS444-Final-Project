@@ -1,5 +1,6 @@
 import os
 import torch
+import wandb
 import pandas as pd
 import numpy as np
 import time
@@ -89,7 +90,7 @@ def adjust_learning_rate(optimizer, epoch, init_lr, total_epochs):
         param_group['lr'] = lr
 
 
-def run_test(net, testloader, criterion, device):
+def run_test(net, testloader, criterion, device, epoch):
     correct = 0
     total = 0
     avg_test_loss = 0.0
@@ -109,6 +110,13 @@ def run_test(net, testloader, criterion, device):
     print('TESTING:')
     print(f'Accuracy of the network on test images: {100 * correct / total:.2f} %')
     print(f'Average loss on test images: {avg_test_loss:.3f}')
+
+    # log test loss and acc in wandb
+    wandb.log({
+        "test_loss": avg_test_loss,
+        "test_acc": 100 * correct / total,
+        "epoch": epoch
+    })
 
 
 # Both the self-supervised rotation task and supervised CIFAR10 classification are
@@ -155,11 +163,20 @@ def train(net, criterion, optimizer, num_epochs, init_lr, device, trainloader, t
         # log train loss and acc
         print('TRAINING:')
         print(f'epoch: {epoch} loss: {running_loss / counter:.3f} acc: {100*running_correct / running_total:.2f} time: {time.time() - start_time:.2f}')
+        
+        # log train loss and acc in wandb
+        wandb.log({
+            "train_loss": running_loss / counter,
+            "train_acc": 100 * running_correct / running_total,
+            "epoch": epoch
+        })
+
         running_loss, running_correct, running_total = 0.0, 0.0, 0.0
         start_time = time.time()
 
+
         net.eval()
-        run_test(net, test_loader, criterion, device)
+        run_test(net, test_loader, criterion, device, epoch)
 
     print('Finished Training')
 

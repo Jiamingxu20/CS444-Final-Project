@@ -1,0 +1,82 @@
+{
+  "os": "Linux-5.14.0-427.50.1.el9_4.x86_64-x86_64-with-glibc2.34",
+  "python": "CPython 3.9.22",
+  "startedAt": "2025-05-11T04:04:10.706135Z",
+  "program": "/u/jx30/CS444-Final-Project/run.py",
+  "codePath": "run.py",
+  "git": {
+    "remote": "https://github.com/Jiamingxu20/CS444-Final-Project.git",
+    "commit": "621549cbdb7c24138b685584ed5d9abd6c094f42"
+  },
+  "email": "jiamingxu20@outlook.com",
+  "root": "/u/jx30/CS444-Final-Project",
+  "host": "ccc0399.campuscluster.illinois.edu",
+  "executable": "/u/jx30/.local/share/mamba/envs/cs444/bin/python",
+  "codePathLocal": "run.py",
+  "cpu_count": 64,
+  "cpu_count_logical": 64,
+  "gpu": "NVIDIA A10",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "134872285184",
+      "used": "9005576192"
+    }
+  },
+  "memory": {
+    "total": "269744574464"
+  },
+  "cpu": {
+    "count": 64,
+    "countLogical": 64
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A10",
+      "memoryTotal": "24146608128",
+      "cudaCores": 9216,
+      "architecture": "Ampere"
+    }
+  ],
+  "slurm": {
+    "cluster_name": "icc",
+    "conf": "/var/spool/slurmd/conf-cache/slurm.conf",
+    "cpus_on_node": "32",
+    "cpus_per_task": "1",
+    "gpus_on_node": "1",
+    "gtids": "0",
+    "job_account": "25sp-ece598sg1-eng",
+    "job_cpus_per_node": "32",
+    "job_end_time": "1746947044",
+    "job_gid": "51000",
+    "job_gpus": "0",
+    "job_id": "2162068",
+    "job_name": "rl_training",
+    "job_nodelist": "ccc0399",
+    "job_num_nodes": "1",
+    "job_partition": "eng-instruction",
+    "job_qos": "normal",
+    "job_start_time": "1746936244",
+    "job_uid": "1141716",
+    "job_user": "jx30",
+    "jobid": "2162068",
+    "localid": "0",
+    "mem_per_node": "131072",
+    "nnodes": "1",
+    "nodeid": "0",
+    "nodelist": "ccc0399",
+    "nprocs": "32",
+    "ntasks": "32",
+    "ntasks_per_node": "32",
+    "prio_process": "0",
+    "procid": "0",
+    "submit_dir": "/u/jx30/CS444-Final-Project",
+    "submit_host": "cc-login5.campuscluster.illinois.edu",
+    "task_pid": "351171",
+    "tasks_per_node": "32",
+    "topology_addr": "ccc0399",
+    "topology_addr_pattern": "node",
+    "tres_per_task": "cpu=1"
+  },
+  "cudaVersion": "12.6"
+}
