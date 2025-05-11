@@ -1,0 +1,61 @@
+/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py:617: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Training and testing datasets ready
+Downloading: "https://download.pytorch.org/models/densenet121-a639ec97.pth" to /u/yzhang70/.cache/torch/hub/checkpoints/densenet121-a639ec97.pth
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30.8M/30.8M [00:00<00:00, 255MB/s]
+Network ready to train
+Training begins
+Training batch:  0
+TRAINING: epoch 0 | loss: 8.432 | acc: 4.76% | time: 94.33s
+VALIDATION: epoch 0 | loss: 6.872 | acc: 7.63%
+Exception ignored in: <function _releaseLock at 0x7efd5d955480>
+Traceback (most recent call last):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/logging/__init__.py", line 228, in _releaseLock
+    def _releaseLock():
+KeyboardInterrupt:
+Traceback (most recent call last):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/queues.py", line 114, in get
+    raise Empty
+_queue.Empty
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/densenet_Arcface.py", line 159, in <module>
+    train_arcface(backbone, arc_face, criterion, optimizer,
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 232, in train_arcface
+    for idx, (imgs, labels) in enumerate(train_loader):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1256, in _try_get_data
+    raise RuntimeError(
+RuntimeError: DataLoader worker (pid(s) 3828387, 3828450, 3828451) exited unexpectedly
+Traceback (most recent call last):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/multiprocessing/queues.py", line 114, in get
+    raise Empty
+_queue.Empty
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/u/yzhang70/CS444-Final-Project/densenet_Arcface.py", line 159, in <module>
+    train_arcface(backbone, arc_face, criterion, optimizer,
+  File "/u/yzhang70/CS444-Final-Project/utils.py", line 232, in train_arcface
+    for idx, (imgs, labels) in enumerate(train_loader):
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1256, in _try_get_data
+    raise RuntimeError(
+RuntimeError: DataLoader worker (pid(s) 3828387, 3828450, 3828451) exited unexpectedly
