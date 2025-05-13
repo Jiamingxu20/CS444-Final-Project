@@ -1,0 +1,15 @@
+{"time":"2025-05-12T21:13:09.519849311-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/u/jx30/CS444-Final-Project/wandb/run-20250512_211309-is82lcln/logs/debug-core.log"}
+{"time":"2025-05-12T21:13:09.78415962-05:00","level":"INFO","msg":"created new stream","id":"is82lcln"}
+{"time":"2025-05-12T21:13:09.784181911-05:00","level":"INFO","msg":"stream: started","id":"is82lcln"}
+{"time":"2025-05-12T21:13:09.784192081-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"is82lcln"}
+{"time":"2025-05-12T21:13:09.784209843-05:00","level":"INFO","msg":"handler: started","stream_id":"is82lcln"}
+{"time":"2025-05-12T21:13:09.784222224-05:00","level":"INFO","msg":"sender: started","stream_id":"is82lcln"}
+{"time":"2025-05-12T21:13:09.97642582-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-12T21:14:24.13458846-05:00","level":"INFO","msg":"stream: closing","id":"is82lcln"}
+{"time":"2025-05-12T21:14:24.134628851-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-12T21:14:24.134793431-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-12T21:14:24.511177983-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-12T21:14:24.591908627-05:00","level":"INFO","msg":"handler: closed","stream_id":"is82lcln"}
+{"time":"2025-05-12T21:14:24.59192923-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"is82lcln"}
+{"time":"2025-05-12T21:14:24.591937601-05:00","level":"INFO","msg":"sender: closed","stream_id":"is82lcln"}
+{"time":"2025-05-12T21:14:24.592981834-05:00","level":"INFO","msg":"stream: closed","id":"is82lcln"}

@@ -1,0 +1,61 @@
+Training and testing datasets ready
+Network ready to train
+Training begins
+Training batch:  0
+TRAINING: epoch 0 | loss: 7.180 | acc: 10.20% | time: 37.70s
+VALIDATION: epoch 0 | loss: 5.122 | acc: 17.95%
+Training batch:  0
+TRAINING: epoch 1 | loss: 0.830 | acc: 90.65% | time: 38.35s
+VALIDATION: epoch 1 | loss: 0.522 | acc: 94.02%
+Training batch:  0
+TRAINING: epoch 2 | loss: 0.400 | acc: 93.98% | time: 37.24s
+VALIDATION: epoch 2 | loss: 0.503 | acc: 89.38%
+Training batch:  0
+TRAINING: epoch 3 | loss: 0.270 | acc: 94.78% | time: 36.63s
+VALIDATION: epoch 3 | loss: 0.518 | acc: 88.32%
+Training batch:  0
+TRAINING: epoch 4 | loss: 0.204 | acc: 95.73% | time: 37.61s
+VALIDATION: epoch 4 | loss: 0.456 | acc: 89.29%
+Training batch:  0
+TRAINING: epoch 5 | loss: 0.175 | acc: 96.11% | time: 37.29s
+VALIDATION: epoch 5 | loss: 0.495 | acc: 89.00%
+Training batch:  0
+TRAINING: epoch 6 | loss: 0.143 | acc: 96.81% | time: 37.52s
+VALIDATION: epoch 6 | loss: 0.474 | acc: 89.48%
+Training batch:  0
+TRAINING: epoch 7 | loss: 0.169 | acc: 96.54% | time: 37.75s
+VALIDATION: epoch 7 | loss: 0.453 | acc: 89.58%
+Training batch:  0
+TRAINING: epoch 8 | loss: 0.109 | acc: 97.58% | time: 36.78s
+VALIDATION: epoch 8 | loss: 0.437 | acc: 90.44%
+Training batch:  0
+TRAINING: epoch 9 | loss: 0.094 | acc: 97.85% | time: 37.11s
+VALIDATION: epoch 9 | loss: 0.414 | acc: 90.54%
+Training batch:  0
+TRAINING: epoch 10 | loss: 0.086 | acc: 97.80% | time: 36.56s
+VALIDATION: epoch 10 | loss: 0.425 | acc: 90.54%
+Training batch:  0
+TRAINING: epoch 11 | loss: 0.075 | acc: 98.20% | time: 37.44s
+VALIDATION: epoch 11 | loss: 0.408 | acc: 89.00%
+Training batch:  0
+TRAINING: epoch 12 | loss: 0.080 | acc: 97.82% | time: 37.83s
+VALIDATION: epoch 12 | loss: 0.471 | acc: 89.38%
+Training batch:  0
+TRAINING: epoch 13 | loss: 0.064 | acc: 98.45% | time: 38.02s
+VALIDATION: epoch 13 | loss: 0.422 | acc: 89.58%
+Training batch:  0
+TRAINING: epoch 14 | loss: 0.065 | acc: 98.34% | time: 37.55s
+VALIDATION: epoch 14 | loss: 0.425 | acc: 89.29%
+Training batch:  0
+TRAINING: epoch 15 | loss: 0.064 | acc: 98.48% | time: 37.31s
+VALIDATION: epoch 15 | loss: 0.425 | acc: 89.96%
+Training batch:  0
+TRAINING: epoch 16 | loss: 0.060 | acc: 98.38% | time: 37.20s
+VALIDATION: epoch 16 | loss: 0.457 | acc: 89.38%
+Training batch:  0
+TRAINING: epoch 17 | loss: 0.060 | acc: 98.46% | time: 37.61s
+VALIDATION: epoch 17 | loss: 0.451 | acc: 89.19%
+Training batch:  0
+TRAINING: epoch 18 | loss: 0.198 | acc: 96.02% | time: 37.28s
+VALIDATION: epoch 18 | loss: 0.786 | acc: 79.63%
+Training batch:  0

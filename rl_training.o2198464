@@ -1,0 +1,152 @@
+wandb: Currently logged in as: jiamingxu20 (cs444_final_project) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.19.11
+wandb: Run data is saved locally in /u/jx30/CS444-Final-Project/wandb/run-20250512_233550-drks984d
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run Coin_detection1
+wandb: ⭐️ View project at https://wandb.ai/cs444_final_project/CS444-Final%20Project
+wandb: 🚀 View run at https://wandb.ai/cs444_final_project/CS444-Final%20Project/runs/drks984d
+hyperparameters =  {'model': 'resnet18', 'batch_size': 128, 'dropout_rate': 0.4, 'num_epochs': 200, 'train_set_ratio': 0.5, 'test_set_ratio': 0.5, 'pretrained': False}
+Training and testing datasets ready
+model =  ResNet
+Network ready to train
+Training begins
+TRAINING:
+epoch: 0 loss: 6.154 acc: 1.76 time: 36.78
+TESTING:
+Accuracy of the network on test images: 3.38 %
+Average loss on test images: 5.567
+TRAINING:
+epoch: 1 loss: 5.289 acc: 4.61 time: 36.20
+TESTING:
+Accuracy of the network on test images: 3.38 %
+Average loss on test images: 5.257
+TRAINING:
+epoch: 2 loss: 5.040 acc: 6.37 time: 37.07
+TESTING:
+Accuracy of the network on test images: 6.95 %
+Average loss on test images: 5.086
+TRAINING:
+epoch: 3 loss: 4.871 acc: 7.95 time: 37.15
+TESTING:
+Accuracy of the network on test images: 7.14 %
+Average loss on test images: 5.150
+TRAINING:
+epoch: 4 loss: 4.687 acc: 9.75 time: 37.04
+TESTING:
+Accuracy of the network on test images: 10.14 %
+Average loss on test images: 4.816
+TRAINING:
+epoch: 5 loss: 4.536 acc: 11.26 time: 35.90
+TESTING:
+Accuracy of the network on test images: 9.56 %
+Average loss on test images: 4.846
+TRAINING:
+epoch: 6 loss: 4.396 acc: 12.26 time: 36.95
+TESTING:
+Accuracy of the network on test images: 8.49 %
+Average loss on test images: 4.949
+TRAINING:
+epoch: 7 loss: 4.261 acc: 14.19 time: 37.50
+TESTING:
+Accuracy of the network on test images: 11.87 %
+Average loss on test images: 4.724
+TRAINING:
+epoch: 8 loss: 4.070 acc: 16.80 time: 35.89
+TESTING:
+Accuracy of the network on test images: 14.58 %
+Average loss on test images: 4.628
+TRAINING:
+epoch: 9 loss: 3.925 acc: 18.76 time: 36.90
+TESTING:
+Accuracy of the network on test images: 17.37 %
+Average loss on test images: 4.511
+TRAINING:
+epoch: 10 loss: 3.736 acc: 21.60 time: 37.16
+TESTING:
+Accuracy of the network on test images: 18.53 %
+Average loss on test images: 4.426
+TRAINING:
+epoch: 11 loss: 3.547 acc: 24.32 time: 38.96
+TESTING:
+Accuracy of the network on test images: 21.14 %
+Average loss on test images: 4.326
+TRAINING:
+epoch: 12 loss: 3.307 acc: 28.04 time: 40.89
+TESTING:
+Accuracy of the network on test images: 21.62 %
+Average loss on test images: 4.184
+TRAINING:
+epoch: 13 loss: 3.076 acc: 31.96 time: 38.27
+TESTING:
+Accuracy of the network on test images: 21.62 %
+Average loss on test images: 4.192
+TRAINING:
+epoch: 14 loss: 2.767 acc: 37.54 time: 37.42
+TESTING:
+Accuracy of the network on test images: 23.65 %
+Average loss on test images: 4.199
+TRAINING:
+epoch: 15 loss: 2.462 acc: 42.54 time: 38.35
+TESTING:
+Accuracy of the network on test images: 26.45 %
+Average loss on test images: 4.085
+TRAINING:
+epoch: 16 loss: 2.208 acc: 46.68 time: 39.57
+TESTING:
+Accuracy of the network on test images: 33.49 %
+Average loss on test images: 3.528
+TRAINING:
+epoch: 17 loss: 1.905 acc: 53.11 time: 39.54
+TESTING:
+Accuracy of the network on test images: 38.42 %
+Average loss on test images: 3.393
+TRAINING:
+epoch: 18 loss: 1.674 acc: 57.73 time: 38.19
+TESTING:
+Accuracy of the network on test images: 41.99 %
+Average loss on test images: 3.320
+TRAINING:
+epoch: 19 loss: 1.461 acc: 62.33 time: 37.52
+TESTING:
+Accuracy of the network on test images: 46.81 %
+Average loss on test images: 3.016
+TRAINING:
+epoch: 20 loss: 1.282 acc: 66.15 time: 37.81
+TESTING:
+Accuracy of the network on test images: 48.55 %
+Average loss on test images: 2.869
+TRAINING:
+epoch: 21 loss: 1.111 acc: 70.05 time: 38.08
+TESTING:
+Accuracy of the network on test images: 49.13 %
+Average loss on test images: 2.860
+TRAINING:
+epoch: 22 loss: 0.924 acc: 74.30 time: 37.92
+TESTING:
+Accuracy of the network on test images: 46.72 %
+Average loss on test images: 3.079
+TRAINING:
+epoch: 23 loss: 0.820 acc: 76.67 time: 36.89
+TESTING:
+Accuracy of the network on test images: 51.54 %
+Average loss on test images: 2.870
+TRAINING:
+epoch: 24 loss: 0.700 acc: 79.87 time: 37.80
+TESTING:
+Accuracy of the network on test images: 49.81 %
+Average loss on test images: 2.951
+TRAINING:
+epoch: 25 loss: 0.610 acc: 82.31 time: 39.36
+TESTING:
+Accuracy of the network on test images: 52.03 %
+Average loss on test images: 2.970
+TRAINING:
+epoch: 26 loss: 0.509 acc: 84.86 time: 37.68
+TESTING:
+Accuracy of the network on test images: 54.73 %
+Average loss on test images: 2.914
+TRAINING:
+epoch: 27 loss: 0.449 acc: 86.24 time: 39.01
+TESTING:
+Accuracy of the network on test images: 53.57 %
+Average loss on test images: 2.895

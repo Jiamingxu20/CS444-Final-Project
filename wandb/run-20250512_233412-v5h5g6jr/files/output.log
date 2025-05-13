@@ -1,0 +1,10 @@
+Training and testing datasets ready
+Network ready to train
+Training begins
+Training batch:  0
+TRAINING: epoch 0 | loss: 7.094 | acc: 11.08% | time: 38.71s
+VALIDATION: epoch 0 | loss: 5.609 | acc: 16.31%
+Training batch:  0
+TRAINING: epoch 1 | loss: 0.642 | acc: 93.57% | time: 36.43s
+VALIDATION: epoch 1 | loss: 0.509 | acc: 95.75%
+Finished Training

@@ -9,10 +9,11 @@ from torch.utils.data import DataLoader, random_split
 import wandb
 
 
-batch_size = 32
+batch_size = 128
 dropout_rate = 0.4
-num_epochs = 500
-train_set_ratio = 0.8
+num_epochs = 200
+train_set_ratio = 0.5
+test_set_ratio = 1 - train_set_ratio
 pretrained = True
 
 hyperparameters = {
@@ -30,7 +31,7 @@ print("hyperparameters = ", hyperparameters)
 
 wandb.init(
     project="CS444-Final Project",
-    name="Coin_detection_convnext_32",
+    name="Coin_detection_convnext_128",
     config=hyperparameters
 )
 
