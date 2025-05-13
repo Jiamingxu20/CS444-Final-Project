@@ -217,6 +217,47 @@ class ArcMarginProduct(nn.Module):
         
         return ouput * self.s
     
+class AdaFace(nn.Module):
+    def __init__(self, in_features, out_features, m=0.4, h=0.333, s=64.0, t_alpha=1.0, eps=1e-3):
+        super(AdaFace, self).__init__()
+        self.in_features = in_features
+        self.out_features = out_features
+        self.m = m
+        self.h = h
+        self.s = s
+        self.eps = eps
+        self.t_alpha = t_alpha
+
+        self.weight = nn.Parameter(torch.FloatTensor(out_features, in_features))
+        nn.init.xavier_uniform_(self.weight)
+
+        self.register_buffer("batch_moments", torch.zeros(2))  # mean, std of norms
+
+    def forward(self, x, label):
+        norm_x = torch.norm(x, dim=1, keepdim=True).clamp(min=self.eps)
+        x_normalized = x / norm_x
+        w_normalized = F.normalize(self.weight)
+
+        cosine = F.linear(x_normalized, w_normalized)
+
+        with torch.no_grad():
+            batch_mean = norm_x.mean()
+            batch_std = norm_x.std()
+            self.batch_moments[0] = (1 - 0.01) * self.batch_moments[0] + 0.01 * batch_mean
+            self.batch_moments[1] = (1 - 0.01) * self.batch_moments[1] + 0.01 * batch_std
+
+        margin_scaler = ((norm_x - self.batch_moments[0]) / (self.batch_moments[1] + self.eps)).clamp(-1, 1) * self.h
+        theta = torch.acos(cosine.clamp(-1.0 + self.eps, 1.0 - self.eps))
+        final_theta = theta + self.m * margin_scaler
+        target_cos = torch.cos(final_theta)
+
+        one_hot = torch.zeros_like(cosine)
+        one_hot.scatter_(1, label.view(-1, 1).long(), 1.0)
+
+        output = (one_hot * target_cos) + ((1.0 - one_hot) * cosine)
+        output = output * self.s
+        return output
+
 
 def train_arcface(backbone, arc_face, criterion, optimizer,
           num_epochs, init_lr, device, train_loader, test_loader):
@@ -296,3 +337,4 @@ def train_arcface(backbone, arc_face, criterion, optimizer,
         })
 
     print('Finished Training')
+

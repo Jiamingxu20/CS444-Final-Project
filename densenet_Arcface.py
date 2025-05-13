@@ -9,10 +9,10 @@ from torch.utils.data import DataLoader, random_split
 
 # Hyperparameters:
 model = 'densenet121'  # or 'densenet121' 'resnet18'
-batch_size = 32
+batch_size = 128
 dropout_rate = 0.4
 num_epochs = 200
-train_set_ratio = 0.5
+train_set_ratio = 0.8
 test_set_ratio = 1 - train_set_ratio
 pretrained = True
 
@@ -32,7 +32,7 @@ print("hyperparameters = ", hyperparameters)
 # Initialize wandb
 wandb.init(
     project="CS444-Final Project",  # Project name
-    name="densenet_arcface",               # Run name
+    name="densenet_arcface_0.8_128",               # Run name
     config={
         'model': model,
         'batch_size': batch_size, 

@@ -1,0 +1,7 @@
+{"time":"2025-05-12T01:07:01.819482411-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/u/yzhang70/CS444-Final-Project/wandb/run-20250512_010701-ci7r0hnz/logs/debug-core.log"}
+{"time":"2025-05-12T01:07:01.93580163-05:00","level":"INFO","msg":"created new stream","id":"ci7r0hnz"}
+{"time":"2025-05-12T01:07:01.935821307-05:00","level":"INFO","msg":"stream: started","id":"ci7r0hnz"}
+{"time":"2025-05-12T01:07:01.936276379-05:00","level":"INFO","msg":"handler: started","stream_id":"ci7r0hnz"}
+{"time":"2025-05-12T01:07:01.936294493-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"ci7r0hnz"}
+{"time":"2025-05-12T01:07:01.936591579-05:00","level":"INFO","msg":"sender: started","stream_id":"ci7r0hnz"}
+{"time":"2025-05-12T01:07:02.116800123-05:00","level":"INFO","msg":"Starting system monitor"}

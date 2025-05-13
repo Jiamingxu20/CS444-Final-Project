@@ -1,0 +1,347 @@
+/u/yzhang70/miniconda3/envs/pinn/lib/python3.10/site-packages/torch/utils/data/dataloader.py:617: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Training and testing datasets ready
+Network ready to train
+Training begins
+Training batch:  0
+TRAINING: epoch 0 | loss: 8.291 | acc: 5.92% | time: 163.38s
+VALIDATION: epoch 0 | loss: 6.605 | acc: 10.33%
+Training batch:  0
+TRAINING: epoch 1 | loss: 4.876 | acc: 21.67% | time: 163.45s
+VALIDATION: epoch 1 | loss: 4.659 | acc: 25.77%
+Training batch:  0
+TRAINING: epoch 2 | loss: 3.198 | acc: 43.11% | time: 162.35s
+VALIDATION: epoch 2 | loss: 3.411 | acc: 44.31%
+Training batch:  0
+TRAINING: epoch 3 | loss: 2.321 | acc: 58.51% | time: 161.96s
+VALIDATION: epoch 3 | loss: 2.652 | acc: 57.34%
+Training batch:  0
+TRAINING: epoch 4 | loss: 1.751 | acc: 68.47% | time: 162.53s
+VALIDATION: epoch 4 | loss: 2.510 | acc: 59.46%
+Training batch:  0
+TRAINING: epoch 5 | loss: 1.415 | acc: 74.16% | time: 162.96s
+VALIDATION: epoch 5 | loss: 2.134 | acc: 67.18%
+Training batch:  0
+TRAINING: epoch 6 | loss: 1.173 | acc: 78.33% | time: 163.12s
+VALIDATION: epoch 6 | loss: 1.914 | acc: 71.62%
+Training batch:  0
+TRAINING: epoch 7 | loss: 1.013 | acc: 81.37% | time: 162.02s
+VALIDATION: epoch 7 | loss: 2.027 | acc: 69.21%
+Training batch:  0
+TRAINING: epoch 8 | loss: 0.856 | acc: 84.05% | time: 162.57s
+VALIDATION: epoch 8 | loss: 1.749 | acc: 75.58%
+Training batch:  0
+TRAINING: epoch 9 | loss: 0.707 | acc: 86.80% | time: 162.64s
+VALIDATION: epoch 9 | loss: 1.678 | acc: 76.93%
+Training batch:  0
+TRAINING: epoch 10 | loss: 0.674 | acc: 86.80% | time: 163.63s
+VALIDATION: epoch 10 | loss: 1.660 | acc: 76.93%
+Training batch:  0
+TRAINING: epoch 11 | loss: 0.604 | acc: 88.46% | time: 162.62s
+VALIDATION: epoch 11 | loss: 1.659 | acc: 77.03%
+Training batch:  0
+TRAINING: epoch 12 | loss: 0.571 | acc: 88.99% | time: 162.94s
+VALIDATION: epoch 12 | loss: 1.670 | acc: 75.68%
+Training batch:  0
+TRAINING: epoch 13 | loss: 0.513 | acc: 90.00% | time: 163.78s
+VALIDATION: epoch 13 | loss: 1.735 | acc: 77.32%
+Training batch:  0
+TRAINING: epoch 14 | loss: 0.513 | acc: 89.78% | time: 162.70s
+VALIDATION: epoch 14 | loss: 1.773 | acc: 75.10%
+Training batch:  0
+TRAINING: epoch 15 | loss: 0.480 | acc: 90.56% | time: 162.89s
+VALIDATION: epoch 15 | loss: 1.733 | acc: 75.68%
+Training batch:  0
+TRAINING: epoch 16 | loss: 0.427 | acc: 91.48% | time: 163.87s
+VALIDATION: epoch 16 | loss: 1.595 | acc: 79.05%
+Training batch:  0
+TRAINING: epoch 17 | loss: 0.425 | acc: 91.81% | time: 164.45s
+VALIDATION: epoch 17 | loss: 1.617 | acc: 78.09%
+Training batch:  0
+TRAINING: epoch 18 | loss: 0.395 | acc: 91.85% | time: 165.25s
+VALIDATION: epoch 18 | loss: 1.627 | acc: 80.12%
+Training batch:  0
+TRAINING: epoch 19 | loss: 0.341 | acc: 92.84% | time: 167.84s
+VALIDATION: epoch 19 | loss: 1.718 | acc: 79.73%
+Training batch:  0
+TRAINING: epoch 20 | loss: 0.373 | acc: 92.36% | time: 167.50s
+VALIDATION: epoch 20 | loss: 1.666 | acc: 78.09%
+Training batch:  0
+TRAINING: epoch 21 | loss: 0.381 | acc: 92.50% | time: 167.29s
+VALIDATION: epoch 21 | loss: 1.678 | acc: 76.93%
+Training batch:  0
+TRAINING: epoch 22 | loss: 0.326 | acc: 93.18% | time: 167.73s
+VALIDATION: epoch 22 | loss: 1.630 | acc: 80.12%
+Training batch:  0
+TRAINING: epoch 23 | loss: 0.306 | acc: 94.03% | time: 166.17s
+VALIDATION: epoch 23 | loss: 1.486 | acc: 81.08%
+Training batch:  0
+TRAINING: epoch 24 | loss: 0.257 | acc: 94.64% | time: 166.55s
+VALIDATION: epoch 24 | loss: 1.727 | acc: 78.57%
+Training batch:  0
+TRAINING: epoch 25 | loss: 0.265 | acc: 94.53% | time: 167.47s
+VALIDATION: epoch 25 | loss: 1.632 | acc: 80.89%
+Training batch:  0
+TRAINING: epoch 26 | loss: 0.326 | acc: 93.44% | time: 168.47s
+VALIDATION: epoch 26 | loss: 1.827 | acc: 77.99%
+Training batch:  0
+TRAINING: epoch 27 | loss: 0.306 | acc: 93.80% | time: 167.99s
+VALIDATION: epoch 27 | loss: 1.650 | acc: 80.31%
+Training batch:  0
+TRAINING: epoch 28 | loss: 0.271 | acc: 94.70% | time: 167.49s
+VALIDATION: epoch 28 | loss: 1.615 | acc: 80.98%
+Training batch:  0
+TRAINING: epoch 29 | loss: 0.251 | acc: 94.74% | time: 167.06s
+VALIDATION: epoch 29 | loss: 1.692 | acc: 80.02%
+Training batch:  0
+TRAINING: epoch 30 | loss: 0.260 | acc: 95.00% | time: 167.28s
+VALIDATION: epoch 30 | loss: 1.631 | acc: 80.98%
+Training batch:  0
+TRAINING: epoch 31 | loss: 0.225 | acc: 95.36% | time: 167.15s
+VALIDATION: epoch 31 | loss: 1.553 | acc: 81.76%
+Training batch:  0
+TRAINING: epoch 32 | loss: 0.241 | acc: 95.39% | time: 166.09s
+VALIDATION: epoch 32 | loss: 1.671 | acc: 79.25%
+Training batch:  0
+TRAINING: epoch 33 | loss: 0.264 | acc: 94.57% | time: 179.83s
+VALIDATION: epoch 33 | loss: 1.694 | acc: 80.02%
+Training batch:  0
+TRAINING: epoch 34 | loss: 0.294 | acc: 94.09% | time: 178.93s
+VALIDATION: epoch 34 | loss: 1.783 | acc: 80.12%
+Training batch:  0
+TRAINING: epoch 35 | loss: 0.272 | acc: 94.39% | time: 177.21s
+VALIDATION: epoch 35 | loss: 1.560 | acc: 82.05%
+Training batch:  0
+TRAINING: epoch 36 | loss: 0.215 | acc: 95.82% | time: 168.51s
+VALIDATION: epoch 36 | loss: 1.552 | acc: 82.34%
+Training batch:  0
+TRAINING: epoch 37 | loss: 0.210 | acc: 95.98% | time: 167.87s
+VALIDATION: epoch 37 | loss: 1.446 | acc: 83.59%
+Training batch:  0
+TRAINING: epoch 38 | loss: 0.170 | acc: 96.52% | time: 167.83s
+VALIDATION: epoch 38 | loss: 1.543 | acc: 81.47%
+Training batch:  0
+TRAINING: epoch 39 | loss: 0.191 | acc: 95.98% | time: 167.72s
+VALIDATION: epoch 39 | loss: 1.765 | acc: 80.41%
+Training batch:  0
+TRAINING: epoch 40 | loss: 0.219 | acc: 95.55% | time: 165.26s
+VALIDATION: epoch 40 | loss: 1.641 | acc: 81.18%
+Training batch:  0
+TRAINING: epoch 41 | loss: 0.232 | acc: 95.42% | time: 163.28s
+VALIDATION: epoch 41 | loss: 1.781 | acc: 81.08%
+Training batch:  0
+TRAINING: epoch 42 | loss: 0.246 | acc: 95.03% | time: 162.84s
+VALIDATION: epoch 42 | loss: 1.633 | acc: 81.18%
+Training batch:  0
+TRAINING: epoch 43 | loss: 0.213 | acc: 95.88% | time: 162.39s
+VALIDATION: epoch 43 | loss: 1.637 | acc: 81.85%
+Training batch:  0
+TRAINING: epoch 44 | loss: 0.182 | acc: 96.39% | time: 162.90s
+VALIDATION: epoch 44 | loss: 1.553 | acc: 82.05%
+Training batch:  0
+TRAINING: epoch 45 | loss: 0.189 | acc: 96.04% | time: 161.76s
+VALIDATION: epoch 45 | loss: 1.660 | acc: 82.14%
+Training batch:  0
+TRAINING: epoch 46 | loss: 0.210 | acc: 96.03% | time: 161.12s
+VALIDATION: epoch 46 | loss: 1.744 | acc: 80.41%
+Training batch:  0
+TRAINING: epoch 47 | loss: 0.208 | acc: 95.86% | time: 161.23s
+VALIDATION: epoch 47 | loss: 1.610 | acc: 81.37%
+Training batch:  0
+TRAINING: epoch 48 | loss: 0.198 | acc: 96.21% | time: 162.35s
+VALIDATION: epoch 48 | loss: 1.637 | acc: 82.72%
+Training batch:  0
+TRAINING: epoch 49 | loss: 0.172 | acc: 96.47% | time: 161.07s
+VALIDATION: epoch 49 | loss: 1.712 | acc: 81.76%
+Training batch:  0
+TRAINING: epoch 50 | loss: 0.168 | acc: 96.68% | time: 162.33s
+VALIDATION: epoch 50 | loss: 1.749 | acc: 81.56%
+Training batch:  0
+TRAINING: epoch 51 | loss: 0.172 | acc: 96.57% | time: 162.40s
+VALIDATION: epoch 51 | loss: 1.646 | acc: 82.34%
+Training batch:  0
+TRAINING: epoch 52 | loss: 0.174 | acc: 96.56% | time: 162.56s
+VALIDATION: epoch 52 | loss: 1.627 | acc: 82.43%
+Training batch:  0
+TRAINING: epoch 53 | loss: 0.153 | acc: 96.92% | time: 161.71s
+VALIDATION: epoch 53 | loss: 1.527 | acc: 83.40%
+Training batch:  0
+TRAINING: epoch 54 | loss: 0.155 | acc: 96.95% | time: 162.82s
+VALIDATION: epoch 54 | loss: 1.649 | acc: 82.72%
+Training batch:  0
+TRAINING: epoch 55 | loss: 0.192 | acc: 96.18% | time: 163.10s
+VALIDATION: epoch 55 | loss: 1.807 | acc: 79.73%
+Training batch:  0
+TRAINING: epoch 56 | loss: 0.185 | acc: 96.33% | time: 161.71s
+VALIDATION: epoch 56 | loss: 1.645 | acc: 82.63%
+Training batch:  0
+TRAINING: epoch 57 | loss: 0.151 | acc: 97.01% | time: 162.80s
+VALIDATION: epoch 57 | loss: 1.813 | acc: 80.69%
+Training batch:  0
+TRAINING: epoch 58 | loss: 0.140 | acc: 97.03% | time: 161.80s
+VALIDATION: epoch 58 | loss: 1.678 | acc: 81.66%
+Training batch:  0
+TRAINING: epoch 59 | loss: 0.148 | acc: 96.95% | time: 161.27s
+VALIDATION: epoch 59 | loss: 1.664 | acc: 82.63%
+Training batch:  0
+TRAINING: epoch 60 | loss: 0.142 | acc: 97.01% | time: 162.95s
+VALIDATION: epoch 60 | loss: 1.689 | acc: 82.34%
+Training batch:  0
+TRAINING: epoch 61 | loss: 0.143 | acc: 97.10% | time: 161.46s
+VALIDATION: epoch 61 | loss: 1.590 | acc: 81.85%
+Training batch:  0
+TRAINING: epoch 62 | loss: 0.172 | acc: 96.60% | time: 161.89s
+VALIDATION: epoch 62 | loss: 1.670 | acc: 81.18%
+Training batch:  0
+TRAINING: epoch 63 | loss: 0.170 | acc: 96.58% | time: 168.64s
+VALIDATION: epoch 63 | loss: 1.633 | acc: 82.72%
+Training batch:  0
+TRAINING: epoch 64 | loss: 0.139 | acc: 97.12% | time: 166.33s
+VALIDATION: epoch 64 | loss: 1.597 | acc: 82.43%
+Training batch:  0
+TRAINING: epoch 65 | loss: 0.156 | acc: 96.81% | time: 162.91s
+VALIDATION: epoch 65 | loss: 1.604 | acc: 82.05%
+Training batch:  0
+TRAINING: epoch 66 | loss: 0.153 | acc: 96.95% | time: 169.83s
+VALIDATION: epoch 66 | loss: 1.599 | acc: 82.92%
+Training batch:  0
+TRAINING: epoch 67 | loss: 0.180 | acc: 96.45% | time: 181.48s
+VALIDATION: epoch 67 | loss: 1.617 | acc: 81.95%
+Training batch:  0
+TRAINING: epoch 68 | loss: 0.128 | acc: 97.32% | time: 174.39s
+VALIDATION: epoch 68 | loss: 1.538 | acc: 82.82%
+Training batch:  0
+TRAINING: epoch 69 | loss: 0.122 | acc: 97.44% | time: 201.28s
+VALIDATION: epoch 69 | loss: 1.666 | acc: 81.95%
+Training batch:  0
+TRAINING: epoch 70 | loss: 0.120 | acc: 97.38% | time: 198.67s
+VALIDATION: epoch 70 | loss: 1.605 | acc: 82.82%
+Training batch:  0
+TRAINING: epoch 71 | loss: 0.120 | acc: 97.51% | time: 201.67s
+VALIDATION: epoch 71 | loss: 1.586 | acc: 82.72%
+Training batch:  0
+TRAINING: epoch 72 | loss: 0.109 | acc: 97.78% | time: 202.56s
+VALIDATION: epoch 72 | loss: 1.612 | acc: 82.82%
+Training batch:  0
+TRAINING: epoch 73 | loss: 0.102 | acc: 97.75% | time: 197.83s
+VALIDATION: epoch 73 | loss: 1.572 | acc: 82.92%
+Training batch:  0
+TRAINING: epoch 74 | loss: 0.119 | acc: 97.43% | time: 191.29s
+VALIDATION: epoch 74 | loss: 1.672 | acc: 82.82%
+Training batch:  0
+TRAINING: epoch 75 | loss: 0.112 | acc: 97.56% | time: 190.47s
+VALIDATION: epoch 75 | loss: 1.610 | acc: 82.72%
+Training batch:  0
+TRAINING: epoch 76 | loss: 0.120 | acc: 97.44% | time: 183.53s
+VALIDATION: epoch 76 | loss: 1.582 | acc: 83.11%
+Training batch:  0
+TRAINING: epoch 77 | loss: 0.130 | acc: 97.29% | time: 176.48s
+VALIDATION: epoch 77 | loss: 1.657 | acc: 82.43%
+Training batch:  0
+TRAINING: epoch 78 | loss: 0.141 | acc: 97.22% | time: 184.88s
+VALIDATION: epoch 78 | loss: 1.675 | acc: 82.43%
+Training batch:  0
+TRAINING: epoch 79 | loss: 0.140 | acc: 97.17% | time: 192.08s
+VALIDATION: epoch 79 | loss: 1.684 | acc: 81.47%
+Training batch:  0
+TRAINING: epoch 80 | loss: 0.123 | acc: 97.43% | time: 182.37s
+VALIDATION: epoch 80 | loss: 1.592 | acc: 82.82%
+Training batch:  0
+TRAINING: epoch 81 | loss: 0.109 | acc: 97.62% | time: 174.58s
+VALIDATION: epoch 81 | loss: 1.657 | acc: 82.14%
+Training batch:  0
+TRAINING: epoch 82 | loss: 0.125 | acc: 97.30% | time: 197.39s
+VALIDATION: epoch 82 | loss: 1.812 | acc: 81.66%
+Training batch:  0
+TRAINING: epoch 83 | loss: 0.151 | acc: 96.77% | time: 202.22s
+VALIDATION: epoch 83 | loss: 1.800 | acc: 81.47%
+Training batch:  0
+TRAINING: epoch 84 | loss: 0.137 | acc: 97.13% | time: 204.69s
+VALIDATION: epoch 84 | loss: 1.684 | acc: 82.14%
+Training batch:  0
+TRAINING: epoch 85 | loss: 0.121 | acc: 97.45% | time: 203.87s
+VALIDATION: epoch 85 | loss: 1.724 | acc: 82.24%
+Training batch:  0
+TRAINING: epoch 86 | loss: 0.110 | acc: 97.51% | time: 205.12s
+VALIDATION: epoch 86 | loss: 1.654 | acc: 83.30%
+Training batch:  0
+TRAINING: epoch 87 | loss: 0.102 | acc: 97.73% | time: 213.38s
+VALIDATION: epoch 87 | loss: 1.592 | acc: 83.98%
+Training batch:  0
+TRAINING: epoch 88 | loss: 0.106 | acc: 97.52% | time: 202.75s
+VALIDATION: epoch 88 | loss: 1.708 | acc: 83.88%
+Training batch:  0
+TRAINING: epoch 89 | loss: 0.094 | acc: 97.94% | time: 181.97s
+VALIDATION: epoch 89 | loss: 1.604 | acc: 84.56%
+Training batch:  0
+TRAINING: epoch 90 | loss: 0.092 | acc: 97.90% | time: 172.53s
+VALIDATION: epoch 90 | loss: 1.790 | acc: 83.11%
+Training batch:  0
+TRAINING: epoch 91 | loss: 0.098 | acc: 97.83% | time: 185.47s
+VALIDATION: epoch 91 | loss: 1.663 | acc: 83.69%
+Training batch:  0
+TRAINING: epoch 92 | loss: 0.084 | acc: 97.93% | time: 192.24s
+VALIDATION: epoch 92 | loss: 1.710 | acc: 83.49%
+Training batch:  0
+TRAINING: epoch 93 | loss: 0.093 | acc: 97.81% | time: 201.04s
+VALIDATION: epoch 93 | loss: 1.632 | acc: 84.07%
+Training batch:  0
+TRAINING: epoch 94 | loss: 0.093 | acc: 97.83% | time: 205.27s
+VALIDATION: epoch 94 | loss: 1.629 | acc: 83.59%
+Training batch:  0
+TRAINING: epoch 95 | loss: 0.093 | acc: 97.85% | time: 206.56s
+VALIDATION: epoch 95 | loss: 1.611 | acc: 83.69%
+Training batch:  0
+TRAINING: epoch 96 | loss: 0.083 | acc: 98.04% | time: 213.74s
+VALIDATION: epoch 96 | loss: 1.542 | acc: 85.23%
+Training batch:  0
+TRAINING: epoch 97 | loss: 0.077 | acc: 98.10% | time: 210.23s
+VALIDATION: epoch 97 | loss: 1.551 | acc: 84.85%
+Training batch:  0
+TRAINING: epoch 98 | loss: 0.072 | acc: 98.09% | time: 202.53s
+VALIDATION: epoch 98 | loss: 1.619 | acc: 84.56%
+Training batch:  0
+TRAINING: epoch 99 | loss: 0.075 | acc: 98.16% | time: 197.52s
+VALIDATION: epoch 99 | loss: 1.616 | acc: 84.27%
+Training batch:  0
+TRAINING: epoch 100 | loss: 0.078 | acc: 98.12% | time: 183.68s
+VALIDATION: epoch 100 | loss: 1.529 | acc: 84.85%
+Training batch:  0
+TRAINING: epoch 101 | loss: 0.079 | acc: 98.11% | time: 178.53s
+VALIDATION: epoch 101 | loss: 1.583 | acc: 84.36%
+Training batch:  0
+TRAINING: epoch 102 | loss: 0.085 | acc: 97.90% | time: 182.11s
+VALIDATION: epoch 102 | loss: 1.666 | acc: 83.40%
+Training batch:  0
+TRAINING: epoch 103 | loss: 0.084 | acc: 97.94% | time: 181.80s
+VALIDATION: epoch 103 | loss: 1.729 | acc: 83.11%
+Training batch:  0
+TRAINING: epoch 104 | loss: 0.073 | acc: 98.12% | time: 188.86s
+VALIDATION: epoch 104 | loss: 1.619 | acc: 83.98%
+Training batch:  0
+TRAINING: epoch 105 | loss: 0.071 | acc: 98.10% | time: 182.90s
+VALIDATION: epoch 105 | loss: 1.706 | acc: 83.69%
+Training batch:  0
+TRAINING: epoch 106 | loss: 0.072 | acc: 98.09% | time: 180.40s
+VALIDATION: epoch 106 | loss: 1.737 | acc: 83.20%
+Training batch:  0
+TRAINING: epoch 107 | loss: 0.098 | acc: 97.78% | time: 180.12s
+VALIDATION: epoch 107 | loss: 1.729 | acc: 82.34%
+Training batch:  0
+TRAINING: epoch 108 | loss: 0.077 | acc: 98.07% | time: 175.68s
+VALIDATION: epoch 108 | loss: 1.661 | acc: 83.78%
+Training batch:  0
+TRAINING: epoch 109 | loss: 0.089 | acc: 97.93% | time: 181.91s
+VALIDATION: epoch 109 | loss: 1.670 | acc: 83.59%
+Training batch:  0
+TRAINING: epoch 110 | loss: 0.098 | acc: 97.67% | time: 192.59s
+VALIDATION: epoch 110 | loss: 1.646 | acc: 83.49%
+Training batch:  0
+TRAINING: epoch 111 | loss: 0.101 | acc: 97.65% | time: 181.60s
+VALIDATION: epoch 111 | loss: 1.704 | acc: 83.30%
+Training batch:  0
+TRAINING: epoch 112 | loss: 0.090 | acc: 97.74% | time: 181.99s
+VALIDATION: epoch 112 | loss: 1.618 | acc: 83.20%
+Training batch:  0
+TRAINING: epoch 113 | loss: 0.085 | acc: 97.97% | time: 177.44s
+VALIDATION: epoch 113 | loss: 1.680 | acc: 83.88%
