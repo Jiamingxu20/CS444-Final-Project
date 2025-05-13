@@ -1,0 +1,65 @@
+Training and testing datasets ready
+Network ready to train
+Training begins
+Training batch:  0
+Traceback (most recent call last):
+  File "/home/jiaming/Desktop/CS444-Final-Project/densenet_Adaface.py", line 129, in <module>
+    train_arcface(backbone, arc_face, criterion, optimizer,
+  File "/home/jiaming/Desktop/CS444-Final-Project/utils.py", line 284, in train_arcface
+    features = backbone(imgs)               # [N, feat_dim]
+               ^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1844, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torchvision/models/densenet.py", line 213, in forward
+    features = self.features(x)
+               ^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torchvision/models/densenet.py", line 122, in forward
+    new_features = layer(features)
+                   ^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torchvision/models/densenet.py", line 88, in forward
+    bottleneck_output = self.bn_function(prev_features)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torchvision/models/densenet.py", line 49, in bn_function
+    bottleneck_output = self.conv1(self.relu1(self.norm1(concated_features)))  # noqa: T484
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/modules/batchnorm.py", line 193, in forward
+    return F.batch_norm(
+           ^^^^^^^^^^^^^
+  File "/home/jiaming/micromamba/envs/cs444/lib/python3.12/site-packages/torch/nn/functional.py", line 2812, in batch_norm
+    return torch.batch_norm(
+           ^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 62.00 MiB. GPU 0 has a total capacity of 7.78 GiB of which 62.62 MiB is free. Including non-PyTorch memory, this process has 7.71 GiB memory in use. Of the allocated memory 7.46 GiB is allocated by PyTorch, and 73.11 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

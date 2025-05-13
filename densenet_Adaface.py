@@ -9,9 +9,9 @@ from torch.utils.data import DataLoader, random_split
 
 # Hyperparameters:
 model = 'densenet121'
-batch_size = 128
+batch_size = 32
 dropout_rate = 0.4
-num_epochs = 200
+num_epochs = 2
 train_set_ratio = 0.8
 test_set_ratio = 1 - train_set_ratio
 pretrained = True
@@ -130,5 +130,5 @@ train_arcface(backbone, arc_face, criterion, optimizer,
       num_epochs, init_lr=0.001, device = device, train_loader = train_loader, test_loader = test_loader)
 
 # Save the model
-torch.save(backbone.state_dict(), f'densenet_adaface_{time.time()}.pth')
+torch.save(backbone.state_dict(), f'checkpoints/densenet_adaface_{time.time()}.pth')
 

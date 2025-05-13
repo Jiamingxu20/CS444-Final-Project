@@ -56,7 +56,7 @@ class TestDataset(Dataset):
 
 def main():
     # Path to model checkpoint
-    model_path = 'adaface_densenet.pth'  
+    model_path = 'checkpoints/adaface_densenet.pth'  
     
     # Paths for test data
     test_csv = 'data/test.csv' 

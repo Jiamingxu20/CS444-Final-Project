@@ -1,0 +1,11 @@
+Training and testing datasets ready
+Network ready to train
+Training begins
+Training batch:  0
+Traceback (most recent call last):
+  File "/home/jiaming/Desktop/CS444-Final-Project/densenet_Adaface.py", line 129, in <module>
+    train_arcface(backbone, arc_face, criterion, optimizer,
+  File "/home/jiaming/Desktop/CS444-Final-Project/utils.py", line 292, in train_arcface
+    running_loss    += loss.item()
+                       ^^^^^^^^^^^
+KeyboardInterrupt
