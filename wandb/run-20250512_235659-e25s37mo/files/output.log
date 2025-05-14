@@ -1,0 +1,20 @@
+Training and testing datasets ready
+Traceback (most recent call last):
+  File "/u/jx30/CS444-Final-Project/ConvNext_32.py", line 96, in <module>
+    net = net.to(device)
+  File "/u/jx30/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1343, in to
+    return self._apply(convert)
+  File "/u/jx30/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 903, in _apply
+    module._apply(fn)
+  File "/u/jx30/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 903, in _apply
+    module._apply(fn)
+  File "/u/jx30/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 903, in _apply
+    module._apply(fn)
+  File "/u/jx30/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 930, in _apply
+    param_applied = fn(param)
+  File "/u/jx30/.local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1329, in convert
+    return t.to(
+RuntimeError: CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.

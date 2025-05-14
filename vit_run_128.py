@@ -10,8 +10,8 @@ from torch.utils.data import DataLoader, random_split
 
 model = 'vit_b_16'     
 batch_size = 128
-dropout_rate = 0.4
-num_epochs = 500
+dropout_rate = 0
+num_epochs = 200
 train_set_ratio = 0.8
 test_set_ratio = 1 - train_set_ratio
 pretrained = True
@@ -119,14 +119,17 @@ else:
 
 hidden_dim = net.heads.head.in_features
 net.heads = nn.Sequential(
-    nn.Dropout(p=dropout_rate),
+    # nn.Dropout(p=dropout_rate),
     nn.Linear(hidden_dim, num_classes)
 )
 net = net.to(device)
 print("model = ", net.__class__.__name__)
 
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.AdamW(net.parameters(), lr=0.001, weight_decay=0.01)
+# optimizer = optim.AdamW(net.parameters(), lr=0.001, weight_decay=0.01)
+optimizer = optim.Adam(net.parameters(), lr=0.001)
+
+
 
 print("Network ready to train")
 

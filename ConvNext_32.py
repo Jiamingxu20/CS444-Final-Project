@@ -98,7 +98,8 @@ print("model = ", net.__class__.__name__)
 
 
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.AdamW(net.parameters(), lr=1e-3, weight_decay=0.05)
+# optimizer = optim.AdamW(net.parameters(), lr=1e-3, weight_decay=0.05)
+optimizer = optim.Adam(net.parameters(), lr=1e-3)
 
 
 wandb.config.update({"net_summary": str(net)})

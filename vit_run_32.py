@@ -42,19 +42,7 @@ wandb.init(
     }
 )
 
-# weights = ViT_B_16_Weights.DEFAULT
-# test_transform = weights.transforms()
-# normalize = test_transform.transforms[-1]
 
-# train_transform = transforms.Compose([
-#     transforms.Resize(256),
-#     transforms.CenterCrop(224),
-#     transforms.RandomHorizontalFlip(p=0.5),
-#     transforms.RandomRotation(15),
-#     transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.05),
-#     transforms.ToTensor(),
-#     normalize,
-# ])
 weights = ViT_B_16_Weights.DEFAULT
 imagenet_mean = (0.485, 0.456, 0.406)
 imagenet_std  = (0.229, 0.224, 0.225)

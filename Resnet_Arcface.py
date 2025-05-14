@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader, random_split
 
 # Hyperparameters:
 model = 'resnet18'  # or 'densenet121' 'resnet18'
-batch_size = 32
+batch_size = 128
 dropout_rate = 0.4
 num_epochs = 200
 train_set_ratio = 0.5
