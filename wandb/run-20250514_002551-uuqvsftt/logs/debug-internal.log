@@ -1,0 +1,16 @@
+{"time":"2025-05-14T00:25:51.782921104-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/u/jx30/CS444-Final-Project/wandb/run-20250514_002551-uuqvsftt/logs/debug-core.log"}
+{"time":"2025-05-14T00:25:51.933935511-05:00","level":"INFO","msg":"created new stream","id":"uuqvsftt"}
+{"time":"2025-05-14T00:25:51.933964055-05:00","level":"INFO","msg":"stream: started","id":"uuqvsftt"}
+{"time":"2025-05-14T00:25:51.933972994-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"uuqvsftt"}
+{"time":"2025-05-14T00:25:51.933980552-05:00","level":"INFO","msg":"sender: started","stream_id":"uuqvsftt"}
+{"time":"2025-05-14T00:25:51.933994051-05:00","level":"INFO","msg":"handler: started","stream_id":"uuqvsftt"}
+{"time":"2025-05-14T00:25:52.099767145-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-14T01:27:37.299026331-05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-05-14T01:57:54.379252389-05:00","level":"INFO","msg":"stream: closing","id":"uuqvsftt"}
+{"time":"2025-05-14T01:57:54.379336253-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-14T01:57:54.379432201-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-14T01:57:54.725977788-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-14T01:57:54.977453939-05:00","level":"INFO","msg":"handler: closed","stream_id":"uuqvsftt"}
+{"time":"2025-05-14T01:57:54.97747742-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uuqvsftt"}
+{"time":"2025-05-14T01:57:54.977518334-05:00","level":"INFO","msg":"sender: closed","stream_id":"uuqvsftt"}
+{"time":"2025-05-14T01:57:54.979183727-05:00","level":"INFO","msg":"stream: closed","id":"uuqvsftt"}
